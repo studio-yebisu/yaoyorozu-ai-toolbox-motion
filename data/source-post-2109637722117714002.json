@@ -1,0 +1,86 @@
+{
+  "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+  "source_post_created_at": "2026-10-12T13:30:02+00:00",
+  "checked_on": "2026-10-13",
+  "timezone": "Asia/Tokyo",
+  "retrieval": "agent-reach / twitter-cli, explicit configured credentials, read-only tweet retrieval",
+  "scope": "The 10 named repositories in the post; full post and attached video are not redistributed.",
+  "decisions": [
+    {
+      "repository": "d3/d3",
+      "id": "d3",
+      "decision": "already_listed_no_duplicate"
+    },
+    {
+      "repository": "mermaid-js/mermaid",
+      "id": "mermaid",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/mermaid-js/mermaid/blob/4e3a85e6d46a0326379e04db3463bb3b53a3ca94/README.md",
+      "verified_at": "2026-10-13T12:13:10.897649+00:00"
+    },
+    {
+      "repository": "chartjs/Chart.js",
+      "id": "chartjs",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/chartjs/Chart.js/blob/7169e65147a47f3720957a6f156a33c838ab9f57/README.md",
+      "verified_at": "2026-10-13T12:13:11.274148+00:00"
+    },
+    {
+      "repository": "apache/echarts",
+      "id": "echarts",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/apache/echarts/blob/34f4d927eafe251f26f63afd3aeefa30f2feba30/README.md",
+      "verified_at": "2026-10-13T12:13:10.996171+00:00"
+    },
+    {
+      "repository": "xyflow/xyflow",
+      "id": "xyflow",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/xyflow/xyflow/blob/3d35b57317576b0916c0bfeaaedd573aaacc2839/README.md",
+      "verified_at": "2026-10-13T12:13:10.941325+00:00"
+    },
+    {
+      "repository": "plotly/plotly.js",
+      "id": "plotly",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/plotly/plotly.js/blob/4862f6271046024e58cd25bfa771e81ffe2fdce6/README.md",
+      "verified_at": "2026-10-13T12:13:13.445353+00:00"
+    },
+    {
+      "repository": "plouc/nivo",
+      "id": "nivo",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/plouc/nivo/blob/0dae2c32052a573f9f1d66ec1b453b572119b265/README.md",
+      "verified_at": "2026-10-13T12:13:13.348041+00:00"
+    },
+    {
+      "repository": "antvis/G6",
+      "id": "g6",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/antvis/G6/blob/bdf6a55cd346afa5429e38083b380081734c6ff9/README.md",
+      "verified_at": "2026-10-13T12:13:13.359574+00:00"
+    },
+    {
+      "repository": "cytoscape/cytoscape.js",
+      "id": "cytoscape",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/cytoscape/cytoscape.js/blob/7ba634095d8954089ee5dc09ada0030f2dca134c/README.md",
+      "verified_at": "2026-10-13T12:13:13.766583+00:00"
+    },
+    {
+      "repository": "vasturiano/3d-force-graph",
+      "id": "force-graph-3d",
+      "decision": "added_with_original_runtime_example",
+      "readme_url": "https://github.com/vasturiano/3d-force-graph/blob/5ccd00f47d72a571319da70ccac080bb8e09709f/README.md",
+      "verified_at": "2026-10-13T12:13:15.690775+00:00"
+    }
+  ],
+  "interpretation": [
+    "The post is a discovery source. Descriptions and licenses use pinned primary repository sources.",
+    "The listed libraries are independent tools; no unified Claude-specific pipeline or model performance was verified.",
+    "Mermaid generates diagrams; storyboard focus and frame control are added in our example.",
+    "Chart.js uses Canvas 2D; this addition makes no GPU acceleration or fixed FPS performance claim.",
+    "ECharts core uses Canvas/SVG; ECharts GL is a separate extension and was not installed or tested.",
+    "New examples use original synthetic data, local dependencies, no audio, and frame-derived updates."
+  ]
+}

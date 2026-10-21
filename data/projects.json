@@ -480,6 +480,81 @@
       }
     },
     {
+      "id": "anatomy",
+      "name": "Anatomy",
+      "repository": "wheresryan22/anatomy",
+      "category": "skills",
+      "kind": "機構図解スキル",
+      "summary": "機械や技術の仕組みを、部品ごとに組み立てた操作可能なアイソメトリックSVG図解にするスキル。WebGLの炎・水・光や、部品が回転する3D表現にも対応。",
+      "use_case": "機械・装置・技術の仕組みを、操作できる立体図で伝える。",
+      "requirements": "Claude CodeなどのAgent Skills対応エージェント、Node.js 20.10以上、Chrome／Chromium。skills CLIで導入する場合はNode.js 22.20以上。React出力はReact 18以上。",
+      "caution": "3Dモードはベータ版。機械の構造を見せる図解向けで、統計チャートや正確な地図には別の道具を使います。動画出力には別途フレーム取得とエンコードが必要です。本ガイドの作例はSVGキットを使用し、WebGL・3Dの実行検証は含みません。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "説明したい機構と寸法・動かす部品を伝え、Anatomyの描画キットと制作ルールでHTML・SVG・Reactの図解を実装する。",
+      "install": "npx skills add wheresryan22/anatomy -a claude-code",
+      "tags": [
+        "Agent Skills",
+        "SVG",
+        "機械の図解",
+        "WebGL",
+        "3D beta"
+      ],
+      "discovery_url": "https://x.com/wheresryan22/status/2108948624004526516",
+      "requested_repository": "wheresryan22/anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "homepage": "https://skills.wheresryan.sh/anatomy",
+      "stars": 7309,
+      "archived": false,
+      "pushed_at": "2026-10-13T08:19:55Z",
+      "default_branch": "main",
+      "commit_sha": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md",
+      "verified_at": "2026-10-13T11:40:34.362663+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/LICENSE",
+      "preview": {
+        "id": "anatomy",
+        "title": "動きを、部品から説明する",
+        "role": "SVGキットによる機構図解",
+        "description": "AnatomyのSVG描画キットで作った小さなプレス。押し型が24mm往復し、移動量と隙間の数値が同じ時刻モデルから変化します。",
+        "source_file": "examples/anatomy/build.mjs",
+        "version": "Anatomy e6600ff / Codex実装",
+        "poster_time": 2.5,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/anatomy.mp4",
+            "bytes": 96933,
+            "sha256": "2715577f56ef696fca9fc7b1f4b4c952da546a21352c4ddbc94314856329a57f"
+          },
+          "gif": {
+            "path": "assets/previews/anatomy.gif",
+            "bytes": 223125,
+            "sha256": "f0e7e1187c7e5cfdb2ad7ef1108aa1c50ad87816baf32e8fe5064aaba5c82474"
+          },
+          "webp": {
+            "path": "assets/previews/anatomy.webp",
+            "bytes": 18542,
+            "sha256": "40acab4919d41aa4f4c3416f09253ce09bb2db73f0c8ac601c2dc2beb6daf789"
+          }
+        },
+        "runtime_feature": "Anatomy iso-kit SVG / 65 solid parts / deterministic linear press",
+        "processing_proof": null
+      }
+    },
+    {
       "id": "iart-motion-skills",
       "name": "iart.ai Motion Skills",
       "repository": "iart-ai/motion-skills",
@@ -2387,6 +2462,780 @@
             "bytes": 9714,
             "sha256": "c71bbbd220c2ae79a6265be52e0f1d77b47ba21be1a7247d5f3bedb886b1becd"
           }
+        }
+      }
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "repository": "mermaid-js/mermaid",
+      "category": "data",
+      "kind": "テキストから図解",
+      "summary": "テキストの定義から、フローチャートやシーケンス図、状態図をSVGとして描くライブラリ。",
+      "use_case": "制作フローやシーンの分岐を整理し、図解を順番に見せる。",
+      "requirements": "JavaScriptを実行できるブラウザ。図の元データはMermaid記法。",
+      "caution": "図解の生成が中心です。動画の時間表やシーンの再生は別に実装します。公開Webで入力を受ける場合はsecurityLevel等の設定を確認してください。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "説明の順番や分岐をMermaid記法で設計し、生成したSVGへフレーム由来の強調や表示切り替えを加える。",
+      "install": "npm install mermaid",
+      "tags": [
+        "SVG",
+        "フローチャート",
+        "テキスト図解"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "mermaid-js/mermaid",
+      "url": "https://github.com/mermaid-js/mermaid",
+      "homepage": "https://mermaid.ai/open-source/",
+      "stars": 90643,
+      "archived": false,
+      "pushed_at": "2026-10-13T09:03:44Z",
+      "default_branch": "develop",
+      "commit_sha": "4e3a85e6d46a0326379e04db3463bb3b53a3ca94",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/mermaid-js/mermaid/blob/4e3a85e6d46a0326379e04db3463bb3b53a3ca94/README.md",
+      "verified_at": "2026-10-13T12:13:10.897649+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/mermaid-js/mermaid/blob/4e3a85e6d46a0326379e04db3463bb3b53a3ca94/LICENSE",
+      "preview": {
+        "id": "mermaid",
+        "title": "テキストの構成図を、順番に見せる",
+        "role": "SVG図解と場面の強調",
+        "description": "Mermaidで独自の制作フローをSVG化。図の生成と、フレーム番号から計算する強調・線の動きを分けて実装しています。",
+        "source_file": "examples/runtime/scenes/mermaid.js",
+        "version": "Mermaid 12.2.0",
+        "poster_time": 4,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/mermaid.mp4",
+            "bytes": 100463,
+            "sha256": "b5540a6df1b26c51fe79e3de85b69af8199ab289b14624a3b6877f7cbfa32865"
+          },
+          "gif": {
+            "path": "assets/previews/mermaid.gif",
+            "bytes": 294060,
+            "sha256": "dc086b9da612ed115b61de2d1dc344c0283517d6483d24eccefc8aa65e32a402"
+          },
+          "webp": {
+            "path": "assets/previews/mermaid.webp",
+            "bytes": 19378,
+            "sha256": "5e318951fefd73e6e1ff35a8f19a2cf0360a0a05cc9ddee4ab64285a54846df4"
+          }
+        },
+        "runtime_feature": "mermaid.initialize + mermaid.render, original flowchart SVG; frame-derived reveal and emphasis added by the example",
+        "processing_proof": null,
+        "source_sha256": "480801c893a9afcdba7537b52fb80e1c7dbca54895f97a342028510e5b6a6638",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "chartjs",
+      "name": "Chart.js",
+      "repository": "chartjs/Chart.js",
+      "category": "data",
+      "kind": "Canvasチャート",
+      "summary": "Canvasで棒・折れ線・ドーナツ等のグラフを描くJavaScriptライブラリ。値更新や表示のアニメーションを設定できる。",
+      "use_case": "数値の推移、比較、レポートの要点をグラフで伝える。",
+      "requirements": "Canvas 2Dに対応するブラウザ。npmパッケージまたは配布ビルド。",
+      "caution": "標準の描画はCanvas 2Dです。GPU描画や固定60fpsは保証されません。動画化では自動アニメーションを止め、値をフレームごとに更新します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "軸と単位、表示するデータを確定してグラフを実装し、update(\"none\")とフレーム番号から段階的な変化を作る。",
+      "install": "npm install chart.js",
+      "tags": [
+        "Canvas 2D",
+        "グラフ",
+        "値の更新"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "chartjs/Chart.js",
+      "url": "https://github.com/chartjs/Chart.js",
+      "homepage": "https://www.chartjs.org/",
+      "stars": 67732,
+      "archived": false,
+      "pushed_at": "2026-10-04T13:05:36Z",
+      "default_branch": "master",
+      "commit_sha": "7169e65147a47f3720957a6f156a33c838ab9f57",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/chartjs/Chart.js/blob/7169e65147a47f3720957a6f156a33c838ab9f57/README.md",
+      "verified_at": "2026-10-13T12:13:11.274148+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/chartjs/Chart.js/blob/7169e65147a47f3720957a6f156a33c838ab9f57/LICENSE.md",
+      "preview": {
+        "id": "chartjs",
+        "title": "予測の線から、更新の差を読む",
+        "role": "Canvasグラフ",
+        "description": "架空の12週間予測を折れ線で描き、基準線と比較しながら後半の予測値を更新する。",
+        "source_file": "examples/runtime/scenes/chartjs.js",
+        "version": "Chart.js 4.5.1",
+        "poster_time": 6,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/chartjs.mp4",
+            "bytes": 82750,
+            "sha256": "a75dbd9bab83b2c5bdfba6c8dbdb15eb353a7f4af8031af601fd6d440563b2f3"
+          },
+          "gif": {
+            "path": "assets/previews/chartjs.gif",
+            "bytes": 216122,
+            "sha256": "564d05e6f779bc4e7ca2d4c9dff25c08c4ed288ff279be07412b9b4ed81f1926"
+          },
+          "webp": {
+            "path": "assets/previews/chartjs.webp",
+            "bytes": 21140,
+            "sha256": "57847279e7edf8406578ff4080e1c9bec3d34c569d75bad27eb254ba2ba70553"
+          }
+        },
+        "runtime_feature": "Chart, line datasets, scriptable pointRadius, canvas plugin, update('none')",
+        "processing_proof": null,
+        "source_sha256": "67cefc6c461cd741f0a36f37d9d5ef1334188153756f7cd78c3446b3b1b19912",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "echarts",
+      "name": "Apache ECharts",
+      "repository": "apache/echarts",
+      "category": "data",
+      "kind": "データ可視化",
+      "summary": "CanvasまたはSVGで多様なチャートを描き、データの更新や状態に応じた表示を構成するライブラリ。",
+      "use_case": "複数系列、ヒートマップ、ダッシュボードの変化を説明する。",
+      "requirements": "JavaScriptを実行できるブラウザと、サイズを指定した描画要素。",
+      "caution": "本体はCanvas／SVGの描画です。3DやWebGLには別のECharts GL拡張が必要です。動画化ではanimationを無効にし、setOptionで時刻ごとの値を指定します。",
+      "license_label": "Apache-2.0",
+      "license_class": "oss",
+      "opus_relation": "チャートのoptionとデータ変換を設計し、色や値の変化をフレーム由来の状態としてsetOptionへ渡す。",
+      "install": "npm install echarts",
+      "tags": [
+        "Canvas",
+        "SVG",
+        "ヒートマップ"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "apache/echarts",
+      "url": "https://github.com/apache/echarts",
+      "homepage": "https://echarts.apache.org",
+      "stars": 67493,
+      "archived": false,
+      "pushed_at": "2026-10-13T09:27:20Z",
+      "default_branch": "master",
+      "commit_sha": "34f4d927eafe251f26f63afd3aeefa30f2feba30",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/apache/echarts/blob/34f4d927eafe251f26f63afd3aeefa30f2feba30/README.md",
+      "verified_at": "2026-10-13T12:13:10.996171+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/apache/echarts/blob/34f4d927eafe251f26f63afd3aeefa30f2feba30/LICENSE",
+      "preview": {
+        "id": "echarts",
+        "title": "活動の集中を、色で追う",
+        "role": "ヒートマップ・データ可視化",
+        "description": "架空の6チャネル×12日間の活動をヒートマップにし、色の凡例を保ったまま活動の集中を移す。",
+        "source_file": "examples/runtime/scenes/echarts.js",
+        "version": "Apache ECharts 6.1.0",
+        "poster_time": 6,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/echarts.mp4",
+            "bytes": 195040,
+            "sha256": "140a7d9d87ec7575cc242ab90b16430c694da6ee4b770a5043d2707062af8212"
+          },
+          "gif": {
+            "path": "assets/previews/echarts.gif",
+            "bytes": 1118749,
+            "sha256": "24ec4f0735a93f5e61fe81f1293cf3d0281b7150eb96cffd83e96197326ca0f3"
+          },
+          "webp": {
+            "path": "assets/previews/echarts.webp",
+            "bytes": 22270,
+            "sha256": "49e8eb86c15df5fde65d7426852773df6c31c68139a29f02b7efeddfb8e049f4"
+          }
+        },
+        "runtime_feature": "echarts.init, heatmap series, visualMap, setOption, SVG renderer, animation=false",
+        "processing_proof": null,
+        "source_sha256": "15791681a1e048221056011f407f3e1b144635ea7ff7f55208b6102c979b4740",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "xyflow",
+      "name": "React Flow / Svelte Flow",
+      "repository": "xyflow/xyflow",
+      "category": "data",
+      "kind": "ノードUI",
+      "summary": "ノードと接続線からなる操作可能な画面を、ReactまたはSvelteで構築するライブラリ群。",
+      "use_case": "制作工程、分岐、依存関係をノード単位で説明するUI。",
+      "requirements": "Reactなら@xyflow/reactと付属CSS、Svelteなら@xyflow/svelte。ブラウザと各フレームワーク環境。",
+      "caution": "グラフUIの基盤で、動画タイムラインの管理は別に必要です。自動のanimated edgeや操作依存の状態は、動画化の際にフレーム制御へ置き換えます。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "ノード・ハンドル・接続条件を設計し、表示する経路と位置をフレームごとに切り替える。作例はReact版を使用する。",
+      "install": "npm install @xyflow/react",
+      "tags": [
+        "React",
+        "Svelte",
+        "ノードUI"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "xyflow/xyflow",
+      "url": "https://github.com/xyflow/xyflow",
+      "homepage": "https://xyflow.com",
+      "stars": 38649,
+      "archived": false,
+      "pushed_at": "2026-10-12T16:54:31Z",
+      "default_branch": "main",
+      "commit_sha": "3d35b57317576b0916c0bfeaaedd573aaacc2839",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/xyflow/xyflow/blob/3d35b57317576b0916c0bfeaaedd573aaacc2839/README.md",
+      "verified_at": "2026-10-13T12:13:10.941325+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/xyflow/xyflow/blob/3d35b57317576b0916c0bfeaaedd573aaacc2839/LICENSE",
+      "preview": {
+        "id": "xyflow",
+        "title": "一つのブリーフから、分岐して合流",
+        "role": "React Flowによるワークフロー図",
+        "description": "架空スタジオの制作工程をReact Flowの独自ノードと接続線で表現。デザインと音の並行作業が合流し、レビューへ進む様子をフレームに同期しています。",
+        "source_file": "examples/runtime/scenes/xyflow.js",
+        "version": "@xyflow/react 12.12.0",
+        "poster_time": 4.8,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/xyflow.mp4",
+            "bytes": 97134,
+            "sha256": "b53032171ca227a9cc16b6b72caff5055e13cd07b07a3cfa697d6c6a5b43c7df"
+          },
+          "gif": {
+            "path": "assets/previews/xyflow.gif",
+            "bytes": 287533,
+            "sha256": "0fbdd3df95bb38a17480314571836772899523db5567736329dadfd2bef2e9ef"
+          },
+          "webp": {
+            "path": "assets/previews/xyflow.webp",
+            "bytes": 24274,
+            "sha256": "8121aca5d29535e4a08825bd0386c64b13699b3b4c4712ae64cd1c52ba1482f9"
+          }
+        },
+        "runtime_feature": "@xyflow/react ReactFlow controlled nodes/edges, custom nodeTypes with Handle/Position, BaseEdge/getSmoothStepPath, Background; flushSync and frame-derived packets without CSS animation",
+        "processing_proof": null,
+        "source_sha256": "543256e1dd05b6352b8d35bf690d660173aab311357bfc5fd65bb4637aa5578a",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "plotly",
+      "name": "Plotly.js",
+      "repository": "plotly/plotly.js",
+      "category": "data",
+      "kind": "科学・統計チャート",
+      "summary": "科学・統計データを、折れ線や散布図、ヒートマップ、3D等のインタラクティブなグラフで表すライブラリ。",
+      "use_case": "波形や測定値、数式から得たデータの変化を可視化する。",
+      "requirements": "JavaScript対応ブラウザ。使用するチャートに応じたPlotlyビルド。3D等にはWebGLが必要。",
+      "caution": "すべてのチャートが滑らかな補間に対応するわけではありません。描画方式と更新APIを選び、描画完了を待ってフレームを取得します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "数式・軸・単位を指定して系列を生成し、react等の更新APIで任意時刻のグラフを描く。",
+      "install": "npm install plotly.js-dist-min",
+      "tags": [
+        "科学可視化",
+        "SVG",
+        "WebGL"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "plotly/plotly.js",
+      "url": "https://github.com/plotly/plotly.js",
+      "homepage": "https://plotly.com/javascript/",
+      "stars": 18360,
+      "archived": false,
+      "pushed_at": "2026-10-08T14:18:55Z",
+      "default_branch": "main",
+      "commit_sha": "4862f6271046024e58cd25bfa771e81ffe2fdce6",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/plotly/plotly.js/blob/4862f6271046024e58cd25bfa771e81ffe2fdce6/README.md",
+      "verified_at": "2026-10-13T12:13:13.445353+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/plotly/plotly.js/blob/4862f6271046024e58cd25bfa771e81ffe2fdce6/LICENSE",
+      "preview": {
+        "id": "plotly",
+        "title": "6つの選択肢の、釣り合いを探す",
+        "role": "分析グラフ",
+        "description": "架空の6シナリオを2変数の散布図で比較し、始点の残像を残して座標を更新する。",
+        "source_file": "examples/runtime/scenes/plotly.js",
+        "version": "Plotly.js 4.1.2",
+        "poster_time": 6,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/plotly.mp4",
+            "bytes": 83469,
+            "sha256": "55d1e96849c38ae3cb4c2a8dc8285e285507ebbe8da1e0b17955a9f17a01dc33"
+          },
+          "gif": {
+            "path": "assets/previews/plotly.gif",
+            "bytes": 267239,
+            "sha256": "1b7618c92a74943935e40959b8076385cf8a6b03fc558a1c47be8685092e7404"
+          },
+          "webp": {
+            "path": "assets/previews/plotly.webp",
+            "bytes": 22984,
+            "sha256": "38d729d8af351d9560c60a513259ef0135b39b6a0cbf54d890dbcb1068361093"
+          }
+        },
+        "runtime_feature": "Plotly.newPlot, Plotly.react, scatter traces, immutable data arrays, transition.duration=0",
+        "processing_proof": null,
+        "source_sha256": "597735403ce9bdd39a59566ccce8b00bd4e960b233d8bc4ef0d940a16a45b388",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "nivo",
+      "name": "Nivo",
+      "repository": "plouc/nivo",
+      "category": "data",
+      "kind": "Reactチャート",
+      "summary": "D3等を利用したReact向けのデータ可視化コンポーネント集。棒・線・円等のグラフを共通のテーマで構成できる。",
+      "use_case": "Reactの画面やテンプレートで、数値を差し替えるチャート。",
+      "requirements": "React環境と、使うチャートの@nivo/*パッケージ。描画領域のサイズ指定。",
+      "caution": "SVG／Canvasの対応はコンポーネントごとに異なります。動画化ではanimateを無効にし、データの補間をフレーム番号から計算します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "チャートに渡すデータ・テーマ・表示する値を設計し、Reactのpropsとして時間ごとの状態を渡す。",
+      "install": "npm install @nivo/bar",
+      "tags": [
+        "React",
+        "D3",
+        "データ差し替え"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "plouc/nivo",
+      "url": "https://github.com/plouc/nivo",
+      "homepage": "https://nivo.rocks",
+      "stars": 14106,
+      "archived": false,
+      "pushed_at": "2026-07-21T02:46:40Z",
+      "default_branch": "master",
+      "commit_sha": "0dae2c32052a573f9f1d66ec1b453b572119b265",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/plouc/nivo/blob/0dae2c32052a573f9f1d66ec1b453b572119b265/README.md",
+      "verified_at": "2026-10-13T12:13:13.348041+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/plouc/nivo/blob/0dae2c32052a573f9f1d66ec1b453b572119b265/LICENSE.md",
+      "preview": {
+        "id": "nivo",
+        "title": "4週間の作業配分を、積み上げる",
+        "role": "Reactグラフ",
+        "description": "ReactのBarコンポーネントで架空の4週間の作業構成を描き、週100単位の配分を更新する。",
+        "source_file": "examples/runtime/scenes/nivo.js",
+        "version": "Nivo 0.99.0",
+        "poster_time": 6,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/nivo.mp4",
+            "bytes": 123485,
+            "sha256": "bf0132bd13b80a3805908caf7e300fe67cf1bc993e929598e84678794867fe5c"
+          },
+          "gif": {
+            "path": "assets/previews/nivo.gif",
+            "bytes": 469859,
+            "sha256": "0e76dc8ea884cccc65e72540aee1863c0c3448c5ef9ac0363faba9e3c581c6ae"
+          },
+          "webp": {
+            "path": "assets/previews/nivo.webp",
+            "bytes": 21996,
+            "sha256": "836448fd2433bc8837d91e1b1a302ffa0e1c1951f468165e19bb30050dca3ff7"
+          }
+        },
+        "runtime_feature": "React Bar, stacked horizontal layout, keys, valueScale, animate=false, flushSync renders",
+        "processing_proof": null,
+        "source_sha256": "182d5f81c644669689ccf5afc5d551824b83045c3755febe831bbe153a46e34d",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "g6",
+      "name": "AntV G6",
+      "repository": "antvis/G6",
+      "category": "data",
+      "kind": "グラフ可視化",
+      "summary": "ノードとエッジのグラフを描き、レイアウト、状態、操作、表示スタイルを組み合わせる可視化ライブラリ。",
+      "use_case": "サービス依存、組織、知識のつながりを配置と強調で見せる。",
+      "requirements": "JavaScript環境と、サイズを指定したブラウザ上の描画要素。",
+      "caution": "レイアウトや動作の種類に応じて設定が必要です。動画の再現性を保つには自動アニメーションを止め、座標と状態を時刻から更新します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "関係データと強調する経路を決め、Graphのデータ更新とdrawで場面を段階的に切り替える。",
+      "install": "npm install @antv/g6",
+      "tags": [
+        "ネットワーク",
+        "ノード",
+        "レイアウト"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "antvis/G6",
+      "url": "https://github.com/antvis/G6",
+      "homepage": "https://g6.antv.antgroup.com/",
+      "stars": 12330,
+      "archived": false,
+      "pushed_at": "2026-10-13T08:14:10Z",
+      "default_branch": "v5",
+      "commit_sha": "bdf6a55cd346afa5429e38083b380081734c6ff9",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/antvis/G6/blob/bdf6a55cd346afa5429e38083b380081734c6ff9/README.md",
+      "verified_at": "2026-10-13T12:13:13.359574+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/antvis/G6/blob/bdf6a55cd346afa5429e38083b380081734c6ff9/LICENSE",
+      "preview": {
+        "id": "g6",
+        "title": "サービスの関係から、構造を見つける",
+        "role": "AntV G6による依存ネットワーク",
+        "description": "架空の15サービスを円環から3領域へ並べ替える作例。G6のデータ更新と描画APIで位置・大きさ・線を変更し、領域ごとの依存を順に強調します。",
+        "source_file": "examples/runtime/scenes/g6.js",
+        "version": "@antv/g6 5.1.1",
+        "poster_time": 3.4,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/g6.mp4",
+            "bytes": 219358,
+            "sha256": "0c85ede26c2d1dd6ef5168b152996bcd8d7f91003582b6d654e90a95e8d26a28"
+          },
+          "gif": {
+            "path": "assets/previews/g6.gif",
+            "bytes": 677365,
+            "sha256": "655e7843a0cf4eea1511d5cf43f9d82dd985ed29d81ca430e6b9a673f03765af"
+          },
+          "webp": {
+            "path": "assets/previews/g6.webp",
+            "bytes": 20100,
+            "sha256": "d7ae999d2a9e1d58316cc1088711d0e88d129f6f4b18c08535d77c287f788012"
+          }
+        },
+        "runtime_feature": "@antv/g6 Graph, setData/render, circle nodes and line edges, updateNodeData/updateEdgeData/draw; fixed positions and animation:false for arbitrary-order frame seeking",
+        "processing_proof": null,
+        "source_sha256": "fee0a684d27ecac836594eff053242dc16995b3b90268dcca1fadbece90779e7",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "cytoscape",
+      "name": "Cytoscape.js",
+      "repository": "cytoscape/cytoscape.js",
+      "category": "data",
+      "kind": "グラフ解析・可視化",
+      "summary": "ネットワークの可視化とグラフ解析を組み合わせるライブラリ。経路探索や要素の選択、レイアウトを扱う。",
+      "use_case": "最短経路、接続関係、ネットワークの一部分を説明する。",
+      "requirements": "JavaScript対応ブラウザ。解析はNode.jsでも実行可能。必要に応じてレイアウト拡張。",
+      "caution": "描画と解析の範囲、追加拡張の条件を確認してください。動画化ではpreset座標とフレーム由来のスタイルを使い、実時間のanimationに依存させません。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "ネットワークをデータ化してaStar等で経路を求め、解析結果と時刻に応じた強調を結びつける。",
+      "install": "npm install cytoscape",
+      "tags": [
+        "経路探索",
+        "グラフ解析",
+        "Canvas"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "cytoscape/cytoscape.js",
+      "url": "https://github.com/cytoscape/cytoscape.js",
+      "homepage": "https://js.cytoscape.org",
+      "stars": 11237,
+      "archived": false,
+      "pushed_at": "2026-10-13T01:33:49Z",
+      "default_branch": "unstable",
+      "commit_sha": "7ba634095d8954089ee5dc09ada0030f2dca134c",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/cytoscape/cytoscape.js/blob/7ba634095d8954089ee5dc09ada0030f2dca134c/README.md",
+      "verified_at": "2026-10-13T12:13:13.766583+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/cytoscape/cytoscape.js/blob/7ba634095d8954089ee5dc09ada0030f2dca134c/LICENSE",
+      "preview": {
+        "id": "cytoscape",
+        "title": "配送網の、より短い経路を探す",
+        "role": "Cytoscape.jsによる重み付き最短経路",
+        "description": "架空の配送網でCytoscape.jsのA*探索を実行。辺の移動コストから求めた最小コスト経路を、ノードと線の段階的な強調で示します。",
+        "source_file": "examples/runtime/scenes/cytoscape.js",
+        "version": "Cytoscape.js 3.34.3",
+        "poster_time": 4.3,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/cytoscape.mp4",
+            "bytes": 88934,
+            "sha256": "3f0f90b3b4545887e35f568bd23f3b735f57a41afac34e6aabdacf4b51165fc5"
+          },
+          "gif": {
+            "path": "assets/previews/cytoscape.gif",
+            "bytes": 246616,
+            "sha256": "d8c596727b256ba21d00d286cf8fda7e8103cf441bf45e6fae15fac0ca2ec14b"
+          },
+          "webp": {
+            "path": "assets/previews/cytoscape.webp",
+            "bytes": 25590,
+            "sha256": "39809aec7998c91d803a594b8fc9e5a3e1bf7d3e215c202ec9536bfc31a322ad"
+          }
+        },
+        "runtime_feature": "cytoscape preset layout with explicit positions, elements().aStar weighted undirected route, collection path/nodes/edges, cy.batch with frame-controlled node.position and element.style, cy.png fresh frame export; no running layout or animation",
+        "processing_proof": null,
+        "source_sha256": "c864f9ca45447137cccbfc1c80a6be01e86f518b60f84be594207a588a10ba69",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
+        }
+      }
+    },
+    {
+      "id": "force-graph-3d",
+      "name": "3d-force-graph",
+      "repository": "vasturiano/3d-force-graph",
+      "category": "three",
+      "kind": "3Dネットワーク",
+      "summary": "Three.jsと力学レイアウトを使い、ノードとリンクからなるネットワークをWebGLの3D空間に描くライブラリ。",
+      "use_case": "関係の密度やクラスタを立体で見せ、カメラから全体を観察する。",
+      "requirements": "WebGL対応ブラウザと3d-force-graph。データにはノードIDとリンクの接続先を指定。",
+      "caution": "物理計算と描画は通常自動更新します。動画化ではseedと計算回数を固定してレイアウトを確定し、描画を停止してカメラをフレームから制御します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "関係データと見る方向を設計し、graphDataやcameraPosition、Three.jsの描画APIを使って任意時刻の視点を作る。",
+      "install": "npm install 3d-force-graph",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "3Dネットワーク"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002",
+      "requested_repository": "vasturiano/3d-force-graph",
+      "url": "https://github.com/vasturiano/3d-force-graph",
+      "homepage": "https://vasturiano.github.io/3d-force-graph/example/large-graph/",
+      "stars": 6452,
+      "archived": false,
+      "pushed_at": "2026-09-29T22:40:12Z",
+      "default_branch": "master",
+      "commit_sha": "5ccd00f47d72a571319da70ccac080bb8e09709f",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/vasturiano/3d-force-graph/blob/5ccd00f47d72a571319da70ccac080bb8e09709f/README.md",
+      "verified_at": "2026-10-13T12:13:15.690775+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "license_url": "https://github.com/vasturiano/3d-force-graph/blob/5ccd00f47d72a571319da70ccac080bb8e09709f/LICENSE",
+      "preview": {
+        "id": "force-graph-3d",
+        "title": "共同研究のつながりに、奥行きを",
+        "role": "3d-force-graphによる3D関係図",
+        "description": "架空の36チームのつながりを3Dで表示。固定seedの初期位置から力学レイアウトを260回計算して停止し、カメラと3領域の強調をフレーム値から描画します。",
+        "source_file": "examples/runtime/scenes/force-graph-3d.js",
+        "version": "3d-force-graph 1.80.1 / Three.js 0.186.1",
+        "poster_time": 2.5,
+        "status": "rendered_and_packaged",
+        "duration": 8.0,
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frame_count": 240,
+        "has_audio": false,
+        "files": {
+          "mp4": {
+            "path": "assets/previews/force-graph-3d.mp4",
+            "bytes": 213604,
+            "sha256": "7ba86279d2d5c779fc68ba766961d5a12694ea35ca662255668120eca40f909f"
+          },
+          "gif": {
+            "path": "assets/previews/force-graph-3d.gif",
+            "bytes": 671129,
+            "sha256": "12aa4f1ef7f35580276b0b124f399daa5cd4396c855703d127a53aa3620d9ae5"
+          },
+          "webp": {
+            "path": "assets/previews/force-graph-3d.webp",
+            "bytes": 22932,
+            "sha256": "3b79d36995a7ad56c59637af4547e2ed22a7354c0b4b31179d8b08448455cd47"
+          }
+        },
+        "runtime_feature": "3d-force-graph ForceGraph3D graphData with seeded positions, d3Force charge/link, warmupTicks(260)/cooldownTicks(0), onEngineStop/pauseAnimation, custom nodeThreeObject, cameraPosition(0ms), renderer().render(scene(),camera()); frozen force layout and pure frame-controlled camera",
+        "processing_proof": null,
+        "source_sha256": "f278e88c1e5542bbcb1b8f67bc347bcafa2b4721823ee6365538639c1791ae05",
+        "implementation_agent": "Codex",
+        "seek_validation": {
+          "frames": [
+            120,
+            0,
+            239,
+            120
+          ],
+          "outOfOrderEqual": true,
+          "idleEqual": true,
+          "freshPageEqual": true
         }
       }
     }

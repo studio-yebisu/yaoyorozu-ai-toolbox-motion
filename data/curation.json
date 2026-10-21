@@ -178,6 +178,29 @@
       ]
     },
     {
+      "id": "anatomy",
+      "name": "Anatomy",
+      "repository": "wheresryan22/anatomy",
+      "category": "skills",
+      "kind": "機構図解スキル",
+      "summary": "機械や技術の仕組みを、部品ごとに組み立てた操作可能なアイソメトリックSVG図解にするスキル。WebGLの炎・水・光や、部品が回転する3D表現にも対応。",
+      "use_case": "機械・装置・技術の仕組みを、操作できる立体図で伝える。",
+      "requirements": "Claude CodeなどのAgent Skills対応エージェント、Node.js 20.10以上、Chrome／Chromium。skills CLIで導入する場合はNode.js 22.20以上。React出力はReact 18以上。",
+      "caution": "3Dモードはベータ版。機械の構造を見せる図解向けで、統計チャートや正確な地図には別の道具を使います。動画出力には別途フレーム取得とエンコードが必要です。本ガイドの作例はSVGキットを使用し、WebGL・3Dの実行検証は含みません。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "説明したい機構と寸法・動かす部品を伝え、Anatomyの描画キットと制作ルールでHTML・SVG・Reactの図解を実装する。",
+      "install": "npx skills add wheresryan22/anatomy -a claude-code",
+      "tags": [
+        "Agent Skills",
+        "SVG",
+        "機械の図解",
+        "WebGL",
+        "3D beta"
+      ],
+      "discovery_url": "https://x.com/wheresryan22/status/2108948624004526516"
+    },
+    {
       "id": "iart-motion-skills",
       "name": "iart.ai Motion Skills",
       "repository": "iart-ai/motion-skills",
@@ -685,6 +708,195 @@
         "ref2va",
         "編集可能"
       ]
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "repository": "mermaid-js/mermaid",
+      "category": "data",
+      "kind": "テキストから図解",
+      "summary": "テキストの定義から、フローチャートやシーケンス図、状態図をSVGとして描くライブラリ。",
+      "use_case": "制作フローやシーンの分岐を整理し、図解を順番に見せる。",
+      "requirements": "JavaScriptを実行できるブラウザ。図の元データはMermaid記法。",
+      "caution": "図解の生成が中心です。動画の時間表やシーンの再生は別に実装します。公開Webで入力を受ける場合はsecurityLevel等の設定を確認してください。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "説明の順番や分岐をMermaid記法で設計し、生成したSVGへフレーム由来の強調や表示切り替えを加える。",
+      "install": "npm install mermaid",
+      "tags": [
+        "SVG",
+        "フローチャート",
+        "テキスト図解"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "chartjs",
+      "name": "Chart.js",
+      "repository": "chartjs/Chart.js",
+      "category": "data",
+      "kind": "Canvasチャート",
+      "summary": "Canvasで棒・折れ線・ドーナツ等のグラフを描くJavaScriptライブラリ。値更新や表示のアニメーションを設定できる。",
+      "use_case": "数値の推移、比較、レポートの要点をグラフで伝える。",
+      "requirements": "Canvas 2Dに対応するブラウザ。npmパッケージまたは配布ビルド。",
+      "caution": "標準の描画はCanvas 2Dです。GPU描画や固定60fpsは保証されません。動画化では自動アニメーションを止め、値をフレームごとに更新します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "軸と単位、表示するデータを確定してグラフを実装し、update(\"none\")とフレーム番号から段階的な変化を作る。",
+      "install": "npm install chart.js",
+      "tags": [
+        "Canvas 2D",
+        "グラフ",
+        "値の更新"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "echarts",
+      "name": "Apache ECharts",
+      "repository": "apache/echarts",
+      "category": "data",
+      "kind": "データ可視化",
+      "summary": "CanvasまたはSVGで多様なチャートを描き、データの更新や状態に応じた表示を構成するライブラリ。",
+      "use_case": "複数系列、ヒートマップ、ダッシュボードの変化を説明する。",
+      "requirements": "JavaScriptを実行できるブラウザと、サイズを指定した描画要素。",
+      "caution": "本体はCanvas／SVGの描画です。3DやWebGLには別のECharts GL拡張が必要です。動画化ではanimationを無効にし、setOptionで時刻ごとの値を指定します。",
+      "license_label": "Apache-2.0",
+      "license_class": "oss",
+      "opus_relation": "チャートのoptionとデータ変換を設計し、色や値の変化をフレーム由来の状態としてsetOptionへ渡す。",
+      "install": "npm install echarts",
+      "tags": [
+        "Canvas",
+        "SVG",
+        "ヒートマップ"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "xyflow",
+      "name": "React Flow / Svelte Flow",
+      "repository": "xyflow/xyflow",
+      "category": "data",
+      "kind": "ノードUI",
+      "summary": "ノードと接続線からなる操作可能な画面を、ReactまたはSvelteで構築するライブラリ群。",
+      "use_case": "制作工程、分岐、依存関係をノード単位で説明するUI。",
+      "requirements": "Reactなら@xyflow/reactと付属CSS、Svelteなら@xyflow/svelte。ブラウザと各フレームワーク環境。",
+      "caution": "グラフUIの基盤で、動画タイムラインの管理は別に必要です。自動のanimated edgeや操作依存の状態は、動画化の際にフレーム制御へ置き換えます。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "ノード・ハンドル・接続条件を設計し、表示する経路と位置をフレームごとに切り替える。作例はReact版を使用する。",
+      "install": "npm install @xyflow/react",
+      "tags": [
+        "React",
+        "Svelte",
+        "ノードUI"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "plotly",
+      "name": "Plotly.js",
+      "repository": "plotly/plotly.js",
+      "category": "data",
+      "kind": "科学・統計チャート",
+      "summary": "科学・統計データを、折れ線や散布図、ヒートマップ、3D等のインタラクティブなグラフで表すライブラリ。",
+      "use_case": "波形や測定値、数式から得たデータの変化を可視化する。",
+      "requirements": "JavaScript対応ブラウザ。使用するチャートに応じたPlotlyビルド。3D等にはWebGLが必要。",
+      "caution": "すべてのチャートが滑らかな補間に対応するわけではありません。描画方式と更新APIを選び、描画完了を待ってフレームを取得します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "数式・軸・単位を指定して系列を生成し、react等の更新APIで任意時刻のグラフを描く。",
+      "install": "npm install plotly.js-dist-min",
+      "tags": [
+        "科学可視化",
+        "SVG",
+        "WebGL"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "nivo",
+      "name": "Nivo",
+      "repository": "plouc/nivo",
+      "category": "data",
+      "kind": "Reactチャート",
+      "summary": "D3等を利用したReact向けのデータ可視化コンポーネント集。棒・線・円等のグラフを共通のテーマで構成できる。",
+      "use_case": "Reactの画面やテンプレートで、数値を差し替えるチャート。",
+      "requirements": "React環境と、使うチャートの@nivo/*パッケージ。描画領域のサイズ指定。",
+      "caution": "SVG／Canvasの対応はコンポーネントごとに異なります。動画化ではanimateを無効にし、データの補間をフレーム番号から計算します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "チャートに渡すデータ・テーマ・表示する値を設計し、Reactのpropsとして時間ごとの状態を渡す。",
+      "install": "npm install @nivo/bar",
+      "tags": [
+        "React",
+        "D3",
+        "データ差し替え"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "g6",
+      "name": "AntV G6",
+      "repository": "antvis/G6",
+      "category": "data",
+      "kind": "グラフ可視化",
+      "summary": "ノードとエッジのグラフを描き、レイアウト、状態、操作、表示スタイルを組み合わせる可視化ライブラリ。",
+      "use_case": "サービス依存、組織、知識のつながりを配置と強調で見せる。",
+      "requirements": "JavaScript環境と、サイズを指定したブラウザ上の描画要素。",
+      "caution": "レイアウトや動作の種類に応じて設定が必要です。動画の再現性を保つには自動アニメーションを止め、座標と状態を時刻から更新します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "関係データと強調する経路を決め、Graphのデータ更新とdrawで場面を段階的に切り替える。",
+      "install": "npm install @antv/g6",
+      "tags": [
+        "ネットワーク",
+        "ノード",
+        "レイアウト"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "cytoscape",
+      "name": "Cytoscape.js",
+      "repository": "cytoscape/cytoscape.js",
+      "category": "data",
+      "kind": "グラフ解析・可視化",
+      "summary": "ネットワークの可視化とグラフ解析を組み合わせるライブラリ。経路探索や要素の選択、レイアウトを扱う。",
+      "use_case": "最短経路、接続関係、ネットワークの一部分を説明する。",
+      "requirements": "JavaScript対応ブラウザ。解析はNode.jsでも実行可能。必要に応じてレイアウト拡張。",
+      "caution": "描画と解析の範囲、追加拡張の条件を確認してください。動画化ではpreset座標とフレーム由来のスタイルを使い、実時間のanimationに依存させません。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "ネットワークをデータ化してaStar等で経路を求め、解析結果と時刻に応じた強調を結びつける。",
+      "install": "npm install cytoscape",
+      "tags": [
+        "経路探索",
+        "グラフ解析",
+        "Canvas"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "force-graph-3d",
+      "name": "3d-force-graph",
+      "repository": "vasturiano/3d-force-graph",
+      "category": "three",
+      "kind": "3Dネットワーク",
+      "summary": "Three.jsと力学レイアウトを使い、ノードとリンクからなるネットワークをWebGLの3D空間に描くライブラリ。",
+      "use_case": "関係の密度やクラスタを立体で見せ、カメラから全体を観察する。",
+      "requirements": "WebGL対応ブラウザと3d-force-graph。データにはノードIDとリンクの接続先を指定。",
+      "caution": "物理計算と描画は通常自動更新します。動画化ではseedと計算回数を固定してレイアウトを確定し、描画を停止してカメラをフレームから制御します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "関係データと見る方向を設計し、graphDataやcameraPosition、Three.jsの描画APIを使って任意時刻の視点を作る。",
+      "install": "npm install 3d-force-graph",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "3Dネットワーク"
+      ],
+      "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
     }
   ],
   "updated_on": "2026-10-13"

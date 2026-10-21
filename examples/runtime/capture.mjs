@@ -24,7 +24,7 @@ await page.route('**/*',route=>{
   return route.continue();
 });
 await page.addInitScript(()=>{let state=260613;Math.random=()=>{state=(Math.imul(1664525,state)+1013904223)>>>0;return state/4294967296;};});
-await page.goto(`${base}/?scene=${encodeURIComponent(id)}`,{waitUntil:'networkidle',timeout:120000});
+await page.goto(get('--url',`${base}/?scene=${encodeURIComponent(id)}`),{waitUntil:'networkidle',timeout:120000});
 await page.evaluate(()=>window.__scene.ready);
 const frames=only?[0,60,120,180,239]:Array.from({length:240},(_,i)=>i);
 for(const frame of frames){

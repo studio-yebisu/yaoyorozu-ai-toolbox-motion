@@ -41,7 +41,9 @@ def main():
     records = data["projects"]
     verification = json.loads((ROOT/"data/verification.json").read_text(encoding="utf-8"))
     assert not verification["errors"]
-    assert len(records) == 32
+    curated = json.loads((ROOT/"data/curation.json").read_text(encoding="utf-8"))["projects"]
+    assert {p["id"] for p in records} == {p["id"] for p in curated}
+    assert len(records) == len(curated)
     assert len(set(p["repository"] for p in records)) == len(records)
     assert len(set(p["id"] for p in records)) == len(records)
     assert len(data["categories"]) == 6

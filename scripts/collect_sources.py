@@ -23,6 +23,10 @@ REPOSITORIES = [
     "abhimahamkali/claude-motion-skill", "iart-ai/motion-skills",
     "apimodels/claude-opus-5-5-video-prompts",
     "code-video-model/CodeVideoModel",
+    "wheresryan22/anatomy",
+    "mermaid-js/mermaid", "chartjs/Chart.js", "apache/echarts",
+    "xyflow/xyflow", "plotly/plotly.js", "plouc/nivo",
+    "antvis/G6", "cytoscape/cytoscape.js", "vasturiano/3d-force-graph",
 ]
 
 
@@ -109,7 +113,8 @@ def main():
                 errors.append({"repository": name, "error": str(error)})
                 print(f"FAILED {name}: {error}", flush=True)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    payload = {"checked_on": "2026-10-12", "timezone": "Asia/Tokyo",
+    checked_on = dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
+    payload = {"checked_on": checked_on, "timezone": "Asia/Tokyo",
                "sources": sorted(records, key=lambda item: item["repository"].lower()), "errors": errors}
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     if errors:

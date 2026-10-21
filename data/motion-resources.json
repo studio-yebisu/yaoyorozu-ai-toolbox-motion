@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "title": "投稿15件から選ぶモーション制作スキル・ツール",
+  "source_post_url": "https://x.com/RoundtableSpace/status/2109958757891346459",
+  "checked_on": "2026-10-13",
+  "timezone": "Asia/Tokyo",
+  "scope": "Seven newly catalogued reference resources, separate from the 42 original rendered examples. Repository README, actual skill files and licenses reviewed; no skills installed or executed.",
+  "resources": [
+    {
+      "id": "product-launch-motion",
+      "post_number": 1,
+      "name": "Product Launch Motion",
+      "repository": "AbubakrChan/product-launch-motion",
+      "use_case": "製品紹介を、形が途切れず変わる短い映像にする。",
+      "summary": "同じ図形をUIやロゴへ変形させ、カーソル操作、スプリング、音楽の拍に合わせて見せる制作スキル。現行v2はHTMLの時刻制御とPlaywright、FFmpegを使う。",
+      "output": "HTMLからMP4",
+      "requirements": "Node.js 20以上、Playwright、FFmpeg、Python 3とnumpy。作者はClaude CodeとOpus 5.5を推奨。",
+      "caution": "v1のGSAP・HyperFrames手順はlegacy。スキル内には作者固有のローカルパスもあるため、自分の制作環境へ読み替える。MITはスキル・文章が対象で、サンプル映像やそのフレームは再利用できない。音楽とモデル利用料は別に確認する。",
+      "license_label": "MIT（スキル・文章）／作例映像は対象外",
+      "install_method": "README掲載のskills CLI",
+      "install_commands": [
+        "npx skills add AbubakrChan/product-launch-motion"
+      ],
+      "url": "https://github.com/AbubakrChan/product-launch-motion",
+      "commit_sha": "dbd1db4f986b4f801ab9fc434d828fb906685d30",
+      "readme_url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/README.md",
+      "license_url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/LICENSE",
+      "verified_at": "2026-10-13T13:19:04.909286+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/README.md",
+          "sha256": "61a801fde02d61672dd17cc8af1385a77352a0548da25156dafc9d25e513d975"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/LICENSE",
+          "sha256": "3b2f7209061d2835c5c0df4af9a85afcd003daf9fcc97f3cadf58ea69fdf83f1"
+        },
+        {
+          "path": "SKILL.md",
+          "url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/SKILL.md",
+          "sha256": "edc04d3de91712bf4cc639977e9ddde7aca627f15c58b1e259d9f30ec6fab0d2"
+        },
+        {
+          "path": "NOTICE",
+          "url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/NOTICE",
+          "sha256": "c937ba4e706f780bf8437f9d9b2b61fe586debf707fde63fd7b331d093bfb3ab"
+        }
+      ]
+    },
+    {
+      "id": "hyperframes-student-kit",
+      "post_number": 4,
+      "name": "HyperFrames Student Kit",
+      "repository": "nateherkai/hyperframes-student-kit",
+      "use_case": "手元の録画を編集し、字幕・B-roll・ショーリールをつくる。",
+      "summary": "無音や言い直しの整理から、ストーリー、字幕、HyperFramesとGSAPの演出までをつなぐ制作キット。motion-showreelは一つのモチーフを変形させ、音楽の拍で章を切り替える。",
+      "output": "素材編集・HTML動画",
+      "requirements": "Node.js 22以上、Git、FFmpegとffprobe、ChromeまたはChromium。Codex／Claude Codeに対応するスキルを同梱。",
+      "caution": "ローカルの合成素材デモには有料生成APIが不要。ElevenLabsの文字起こし・音声、Kie.aiの画像・動画・音楽生成は任意で、各アカウント・キー・利用枠が必要。AISロゴなどのブランド素材はMITの再利用対象外。",
+      "license_label": "MIT（コード）／AISブランド素材は対象外",
+      "install_method": "README掲載のプロジェクト導入",
+      "install_commands": [
+        "git clone https://github.com/nateherkai/hyperframes-student-kit.git",
+        "cd hyperframes-student-kit",
+        "npm ci",
+        "npm run setup",
+        "npm test"
+      ],
+      "url": "https://github.com/nateherkai/hyperframes-student-kit",
+      "commit_sha": "0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86",
+      "readme_url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/README.md",
+      "license_url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/LICENSE",
+      "verified_at": "2026-10-13T13:19:05.206981+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/README.md",
+          "sha256": "bb0db19b0c5dd528f020097af3f048a98035a102a0041c6db7583943a68ce4c4"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/LICENSE",
+          "sha256": "80cc7a4b459a540d49baf68f132c8e6ad86ff7fcd5c7d51bedf046743d33600e"
+        },
+        {
+          "path": ".agents/skills/motion-showreel/SKILL.md",
+          "url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/.agents/skills/motion-showreel/SKILL.md",
+          "sha256": "558c935373043a2e7b8fa98114a44aec6378bfd1aa4ec37b47608a00a94586a8"
+        },
+        {
+          "path": "docs/TOOLS-AND-API-KEYS.md",
+          "url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/docs/TOOLS-AND-API-KEYS.md",
+          "sha256": "90c3520259f81cb48ac6436df408eb5772f3f5036b1062072e611e71157bc916"
+        }
+      ]
+    },
+    {
+      "id": "barty-motion-graphics",
+      "post_number": 5,
+      "name": "motion-graphics（Barty-Bart）",
+      "repository": "Barty-Bart/motion-graphics",
+      "use_case": "話す言葉に合わせた差し込み映像や、完成動画の効果音をつくる。",
+      "summary": "話者動画と文字起こしに合わせるmotion-broll、製品の流れをワンカットで見せるexplainer-engaging、効果音を配置・計測するsound-effectsなどを用途別に選べる。",
+      "output": "差し込み映像・製品紹介・音の仕上げ",
+      "requirements": "機能によりNode.js、Python、PlaywrightとChromium、FFmpeg。B-rollは元動画と時刻付きの文字起こしを用意する。音の仕上げはPython 3.10以上と音声解析の依存が必要。",
+      "caution": "B-rollの初期設定はbashを前提とする。時刻のない文字起こしにはローカルfaster-whisper等が別途必要。フォントはOFL、アイコンはISC、同梱SFXはCC0との記載。追加取得する曲・効果音は個別条件を確認する。今回は人物分離など全6スキルの実行はしていない。",
+      "license_label": "MIT（コード）／フォント・アイコン・音は個別条件",
+      "install_method": "README掲載のskills CLIで必要なスキルを選択",
+      "install_commands": [
+        "npx skills add Barty-Bart/motion-graphics"
+      ],
+      "url": "https://github.com/Barty-Bart/motion-graphics",
+      "commit_sha": "3d83d987d658601d8a1269eb691622bdcd427335",
+      "readme_url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/README.md",
+      "license_url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/LICENSE",
+      "verified_at": "2026-10-13T13:19:04.898832+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/README.md",
+          "sha256": "55da594be17cc64454d34bf3e374d9dcc4bd869e34e385d2ff2fc0ee6a74dfaf"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/LICENSE",
+          "sha256": "82e7354aaa7e2ba7b136d0a626ca99c43b6721019f444693189bc6cfb0b2445c"
+        },
+        {
+          "path": "skills/motion-broll/SKILL.md",
+          "url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/skills/motion-broll/SKILL.md",
+          "sha256": "f6ddf5bac5184d8921b1a0e8c8d3d72b95092b9664e5b3afc319ef1f2e46ab7b"
+        },
+        {
+          "path": "skills/explainer-engaging/SKILL.md",
+          "url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/skills/explainer-engaging/SKILL.md",
+          "sha256": "d4741320d78e8a3a6330beb7b1273d44530c3e45262f65bece9729e6d3041d8f"
+        },
+        {
+          "path": "skills/sound-effects/SKILL.md",
+          "url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/skills/sound-effects/SKILL.md",
+          "sha256": "0754dbfa1d5391e25d43ad048a1846a9b342420bad14f8d5c0bced606494110c"
+        }
+      ]
+    },
+    {
+      "id": "animate-procedural",
+      "post_number": 6,
+      "name": "Animate",
+      "repository": "cth9191/animate",
+      "use_case": "切り絵、版画、ピクセル画などの見た目で短い解説映像をつくる。",
+      "summary": "Canvasへ図形を描き、絵柄のキット、ストーリー、音を組み合わせる制作スキル。台本、見た目、絵コンテを確認してからアニメーションへ進み、複数の縦横比に配置を調整する。",
+      "output": "CanvasからMP4",
+      "requirements": "Claude Code、Node.js 18以上、PlaywrightとChromium、FFmpeg。ナレーションの単語時刻にはPythonとfaster-whisper。",
+      "caution": "ElevenLabsのナレーションは任意で接続と利用枠が必要。手元の録音も使える。WebGLの専用スタイルは上流でも未提供と明記されており、既存のCanvas作風と区別する。",
+      "license_label": "MIT",
+      "install_method": "README掲載のClaude Codeプラグイン導入",
+      "install_commands": [
+        "/plugin marketplace add cth9191/animate",
+        "/plugin install animate@animate"
+      ],
+      "url": "https://github.com/cth9191/animate",
+      "commit_sha": "7e5eb56feb2dd573f890e1b7b34748af43d58263",
+      "readme_url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/README.md",
+      "license_url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/LICENSE",
+      "verified_at": "2026-10-13T13:19:04.972878+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/README.md",
+          "sha256": "7e6a99439520dd680e040c5dfe8e6c717e9327f3bbfd94311fadaa5bbb3bcfd7"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/LICENSE",
+          "sha256": "0e1b179ead2d4293be7dce9c6832977248549004f4e58cd72ff86f8cb381aba9"
+        },
+        {
+          "path": "plugins/animate/skills/animate/SKILL.md",
+          "url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/plugins/animate/skills/animate/SKILL.md",
+          "sha256": "58876da1af957ac977132b693e5052adfbd047eada9f22dc8db6f93e3984abe7"
+        }
+      ]
+    },
+    {
+      "id": "claude-remotion-skill",
+      "post_number": 8,
+      "name": "Claude Remotion Skill",
+      "repository": "haidrrrry/claude-remotion-skill",
+      "use_case": "Remotionのロゴ、字幕、短い広告映像の動きを詰める。",
+      "summary": "ReactとRemotionの制作に、スプリング、登場順、退場、レイヤー、テーマの共通化を加える第三者スキル。書き出したフレームを見て修正する工程を含む。",
+      "output": "Remotion制作・演出レビュー",
+      "requirements": "Node.js、React、RemotionとCLI、描画用ブラウザ。フレーム確認にはRemotionの静止画出力かFFmpegを使う。",
+      "caution": "Remotion公式のAgent Skillsとは別の作者・別リポジトリ。MITはこのスキルに適用され、Remotion本体の企業利用などの条件は別途確認する。常時微動や粒子などは作者の作風で、すべての作品に必要な規則ではない。",
+      "license_label": "MIT（スキル）／Remotion本体は別条件",
+      "install_method": "README掲載のプロジェクト単位のフォルダ配置",
+      "install_commands": [],
+      "install_note": "READMEの手順でリポジトリを取得し、remotion-motion-graphics/を制作プロジェクトの.claude/skills/へ配置する。READMEのmkdir・cp例はbash系シェル向け。",
+      "url": "https://github.com/haidrrrry/claude-remotion-skill",
+      "commit_sha": "1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383",
+      "readme_url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/README.md",
+      "license_url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/LICENSE",
+      "verified_at": "2026-10-13T13:19:07.538706+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/README.md",
+          "sha256": "4ea860fdfe2240138b352f0b081007d094e06323320b6b478aac23042ae36831"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/LICENSE",
+          "sha256": "dab0baadbe1583f645801cac32fb469255f1e5f48f55da75a16d3bda98b922ea"
+        },
+        {
+          "path": "remotion-motion-graphics/SKILL.md",
+          "url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/remotion-motion-graphics/SKILL.md",
+          "sha256": "3ae53a9c3d9a37fd56340cfb7780b5ab25c9ffc6eacbbfa30223ebc7097040d9"
+        }
+      ]
+    },
+    {
+      "id": "gsap-skills",
+      "post_number": 14,
+      "name": "GSAP AI Skills",
+      "repository": "greensock/gsap-skills",
+      "use_case": "文字・SVG・複数要素のタイムラインを正しく実装する。",
+      "summary": "GreenSock公式のAPI・タイムライン・プラグイン・フレームワーク連携スキル集。開始位置、ラベル、並行する動き、後片付けを整理する実装の参照先。",
+      "output": "GSAPの実装・レビュー",
+      "requirements": "skills形式を読めるエージェントと、JavaScript／GSAPを使う制作環境。Reactなどは選択した構成に応じて用意する。",
+      "caution": "スキル集はMITだがGSAP本体はStandard License。スキル単体にはMP4書き出し機能がなく、動画化には時刻制御と別の書き出し手段を組み合わせる。",
+      "license_label": "MIT（スキル）／GSAP本体は独自ライセンス",
+      "install_method": "README掲載のskills CLI",
+      "install_commands": [
+        "npx skills add https://github.com/greensock/gsap-skills"
+      ],
+      "url": "https://github.com/greensock/gsap-skills",
+      "commit_sha": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "readme_url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+      "license_url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+      "verified_at": "2026-10-13T13:19:07.538796+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+          "sha256": "5ad159c4ca569a8b148107d1456fd9840000c2d20ca17494111d58595ce2bdae"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+          "sha256": "b8297853320e83ac0bee09cc0ef23254efbac3aee1d74aa3b3bcd0eac58894b8"
+        },
+        {
+          "path": "skills/gsap-core/SKILL.md",
+          "url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-core/SKILL.md",
+          "sha256": "de938eefd9a5bc6335216a17783788cd21408923ead290cda5871b7d61db66b8"
+        },
+        {
+          "path": "skills/gsap-timeline/SKILL.md",
+          "url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md",
+          "sha256": "fbe7a2b9e66e66d2c956f650583d48385498b677ba1292f1dce9d1ffb1a77ea0"
+        }
+      ]
+    },
+    {
+      "id": "lottiefiles-motion-design",
+      "post_number": 15,
+      "name": "Motion Design Skill（LottieFiles）",
+      "repository": "LottieFiles/motion-design-skill",
+      "use_case": "ブランドに合う速さ、イージング、注目させる順番を決める。",
+      "summary": "感情、視線誘導、動きの重さを起点に、時間・イージング・複数要素の振り付けを選ぶ設計スキル。CSS、GSAP、Motion、Lottieなど実装手段を限定しない。",
+      "output": "動きの設計・レビュー",
+      "requirements": "対象の画面や映像の目的と、実装するアニメーション環境。特定のLottieサービスやAPIは必須とされていない。",
+      "caution": "動画エンジンやLottieファイルの書き出しツールではない。UIのフィードバックも対象だが、このガイドではモーションの設計・演出に絞って紹介する。",
+      "license_label": "MIT",
+      "install_method": "README掲載のskills CLI",
+      "install_commands": [
+        "npx skills add LottieFiles/motion-design-skill"
+      ],
+      "url": "https://github.com/LottieFiles/motion-design-skill",
+      "commit_sha": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "readme_url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/README.md",
+      "license_url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/LICENSE",
+      "verified_at": "2026-10-13T13:19:07.882232+00:00",
+      "status": "primary_sources_reviewed_not_runtime_tested",
+      "verification_scope": "README, root LICENSE, and the specific skill/reference files listed in inspected_files. No install, skill execution, rendered output, or performance comparison.",
+      "install_source_url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/README.md",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/README.md",
+          "sha256": "460b9c810dabb768b81ce45327f2399316e7aa9b4ea9639697ffb49eeb382f05"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/LICENSE",
+          "sha256": "caa3ebdb6e8306e4ad3f4b0ce7d3538dcbb1af1b98e8d4efe537ffa2ec55a36f"
+        },
+        {
+          "path": "skills/motion-design/SKILL.md",
+          "url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/skills/motion-design/SKILL.md",
+          "sha256": "0fa7bd378776e776a9af528db040e5144127834c461ba7fb6805f47d13bc293d"
+        }
+      ]
+    }
+  ]
+}

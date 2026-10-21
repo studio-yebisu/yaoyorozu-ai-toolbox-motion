@@ -292,5 +292,95 @@
       "bytes": 55326,
       "sha256": "2d129e5ead9989219c25e0e5aab66c4fb64f93586fd47fce5293f86e092f79ca"
     }
+  },
+  "anatomy": {
+    "id": "anatomy",
+    "title": "動きを、部品から説明する",
+    "role": "SVGキットによる機構図解",
+    "description": "AnatomyのSVG描画キットで作った小さなプレス。押し型が24mm往復し、移動量と隙間の数値が同じ時刻モデルから変化します。",
+    "source_file": "examples/anatomy/build.mjs",
+    "version": "Anatomy e6600ff / Codex実装",
+    "poster_time": 2.5
+  },
+  "mermaid": {
+    "id": "mermaid",
+    "title": "テキストの構成図を、順番に見せる",
+    "role": "SVG図解と場面の強調",
+    "description": "Mermaidで独自の制作フローをSVG化。図の生成と、フレーム番号から計算する強調・線の動きを分けて実装しています。",
+    "source_file": "examples/runtime/scenes/mermaid.js",
+    "version": "Mermaid 12.2.0",
+    "poster_time": 4
+  },
+  "chartjs": {
+    "id": "chartjs",
+    "title": "予測の線から、更新の差を読む",
+    "role": "Canvasグラフ",
+    "description": "架空の12週間予測を折れ線で描き、基準線と比較しながら後半の予測値を更新する。",
+    "source_file": "examples/runtime/scenes/chartjs.js",
+    "version": "Chart.js 4.5.1",
+    "poster_time": 6
+  },
+  "echarts": {
+    "id": "echarts",
+    "title": "活動の集中を、色で追う",
+    "role": "ヒートマップ・データ可視化",
+    "description": "架空の6チャネル×12日間の活動をヒートマップにし、色の凡例を保ったまま活動の集中を移す。",
+    "source_file": "examples/runtime/scenes/echarts.js",
+    "version": "Apache ECharts 6.1.0",
+    "poster_time": 6
+  },
+  "plotly": {
+    "id": "plotly",
+    "title": "6つの選択肢の、釣り合いを探す",
+    "role": "分析グラフ",
+    "description": "架空の6シナリオを2変数の散布図で比較し、始点の残像を残して座標を更新する。",
+    "source_file": "examples/runtime/scenes/plotly.js",
+    "version": "Plotly.js 4.1.2",
+    "poster_time": 6
+  },
+  "nivo": {
+    "id": "nivo",
+    "title": "4週間の作業配分を、積み上げる",
+    "role": "Reactグラフ",
+    "description": "ReactのBarコンポーネントで架空の4週間の作業構成を描き、週100単位の配分を更新する。",
+    "source_file": "examples/runtime/scenes/nivo.js",
+    "version": "Nivo 0.99.0",
+    "poster_time": 6
+  },
+  "xyflow": {
+    "id": "xyflow",
+    "title": "一つのブリーフから、分岐して合流",
+    "role": "React Flowによるワークフロー図",
+    "description": "架空スタジオの制作工程をReact Flowの独自ノードと接続線で表現。デザインと音の並行作業が合流し、レビューへ進む様子をフレームに同期しています。",
+    "source_file": "examples/runtime/scenes/xyflow.js",
+    "version": "@xyflow/react 12.12.0",
+    "poster_time": 4.8
+  },
+  "g6": {
+    "id": "g6",
+    "title": "サービスの関係から、構造を見つける",
+    "role": "AntV G6による依存ネットワーク",
+    "description": "架空の15サービスを円環から3領域へ並べ替える作例。G6のデータ更新と描画APIで位置・大きさ・線を変更し、領域ごとの依存を順に強調します。",
+    "source_file": "examples/runtime/scenes/g6.js",
+    "version": "@antv/g6 5.1.1",
+    "poster_time": 3.4
+  },
+  "cytoscape": {
+    "id": "cytoscape",
+    "title": "配送網の、より短い経路を探す",
+    "role": "Cytoscape.jsによる重み付き最短経路",
+    "description": "架空の配送網でCytoscape.jsのA*探索を実行。辺の移動コストから求めた最小コスト経路を、ノードと線の段階的な強調で示します。",
+    "source_file": "examples/runtime/scenes/cytoscape.js",
+    "version": "Cytoscape.js 3.34.3",
+    "poster_time": 4.3
+  },
+  "force-graph-3d": {
+    "id": "force-graph-3d",
+    "title": "共同研究のつながりに、奥行きを",
+    "role": "3d-force-graphによる3D関係図",
+    "description": "架空の36チームのつながりを3Dで表示。固定seedの初期位置から力学レイアウトを260回計算して停止し、カメラと3領域の強調をフレーム値から描画します。",
+    "source_file": "examples/runtime/scenes/force-graph-3d.js",
+    "version": "3d-force-graph 1.80.1 / Three.js 0.186.1",
+    "poster_time": 2.5
   }
 }

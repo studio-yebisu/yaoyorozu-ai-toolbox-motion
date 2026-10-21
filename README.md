@@ -1,20 +1,25 @@
 # Claude モーショングラフィック制作ガイド
 
-Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。32のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
+Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。42のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
 
-**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[32本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
+**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[42本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
 
 ![Claude モーショングラフィック制作ガイド](assets/og-card-motion-v4.png)
 
 ## ガイドの内容
 
-- **32本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
+- **投稿15件の使い分け**：[モーション制作スキル7件を新たに紹介](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-production-skills)。用途・導入・利用条件を比較し、既掲載7件とUI/UX側の1件へ案内します。新7件は資料の確認段階で、作例の本数とは分けています。
+- **42本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
 - **GIFと実装コード**：動きと実装をその場で確認し、コードをコピーして再現・編集できます。
 - **6カテゴリと4つの制作ルート**：用途や実行環境に応じた組み合わせを選択できます。
+- **Claude Motion（公式ベータ）**：[チャットから制作する方法](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#claude-motion)。Team・Enterpriseの利用条件と、Charlie Hillsの制作手順・16種の作例記事を紹介しています。
 - **動きを詰める方法**：[指示の具体化とフレーム単位の修正](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-direction)。実験記事の要約と、コピーして使える修正ブリーフを掲載しています。
+- **グラフと関係図**：[数値・工程・ネットワークを動かす](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#data-visualization)。Chart.js、ECharts、Mermaid、React Flowなど9件を追加し、用途と独自作例を比較できます。
 - **40秒の紹介動画**：作例31本を用いた紹介映像。[制作コード・構成表](examples/remotion/PROMO_README.md)（Suno楽曲含む）も確認できます。
 
 ## 4つの制作ルート
+
+チャット内で制作する公式サービスは[Claude Motionの案内](docs/Claude%20Motion.md)へ。下の4ルートは、コードと制作環境を組み合わせてつくる方法です。
 
 | つくりたいもの | 主なスタック | 詳細解説 |
 | --- | --- | --- |
@@ -26,7 +31,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 ## スキル・ツール一覧
 
 
-### 制作スキル・事例（8件）
+### 制作スキル・事例（9件）
 
 | スキル・ツール | 使いどころ | ライセンス |
 | --- | --- | --- |
@@ -36,6 +41,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 | [claude-motion](https://github.com/whaleyxbt/claude-motion) | 映像と効果音をフレーム単位で同期させる動画制作。 | [MIT](https://github.com/whaleyxbt/claude-motion/blob/e627941543d9988b155dc610bb9cc0115a5e365e/LICENSE) |
 | [claude-motion-design](https://github.com/howseen-ai/claude-motion-design) | Web技術を用いたモーショングラフィックスの動画書き出し。 | [MIT](https://github.com/howseen-ai/claude-motion-design/blob/3d90d349ef3fdde9b7e89de4df4a2159c9e8697f/LICENSE) |
 | [/motion for Claude Code](https://github.com/abhimahamkali/claude-motion-skill) | 図形やメタファーを用いた短い解説映像の作成。 | [LICENSE未確認](https://github.com/abhimahamkali/claude-motion-skill/blob/37d44b5d2db8e28c4ebf011cb8f1bd1e260ac09c/README.md) |
+| [Anatomy](https://github.com/wheresryan22/anatomy) | 機械・装置・技術の仕組みを、操作できる立体図で伝える。 | [MIT](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/LICENSE) |
 | [iart.ai Motion Skills](https://github.com/iart-ai/motion-skills) | 目的の表現に応じた専用プロンプトやスキルの選択。 | [MIT（索引）](https://github.com/iart-ai/motion-skills/blob/4a9822375b589294aa369fde44205c62dfcf9c27/LICENSE) |
 | [Opus 5.5 Video Prompts](https://github.com/apimodels/claude-opus-5-5-video-prompts) | プロンプトの記述粒度や技術選定パターンの調査。 | [CC BY 4.0（編集資料）](https://github.com/apimodels/claude-opus-5-5-video-prompts/blob/383335d1ed1a6a6d84b772d7c802ca0d221f6410/LICENSE) |
 
@@ -60,7 +66,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 | [Anime.js](https://github.com/juliangarnier/anime) | SVGパスのアニメーション、幾何学模様のモーフィング、スタッガー演出。 | [MIT](https://github.com/juliangarnier/anime/blob/01b81be1df6843ccfe0a71c0699a746bf740dd77/LICENSE.md) |
 | [canvas-confetti](https://github.com/catdad/canvas-confetti) | タスク完了、実績解除、祝賀演出のUIアニメーション。 | [ISC](https://github.com/catdad/canvas-confetti/blob/20eebad51dde793070c373d594099a7ed8d96e22/LICENSE) |
 
-### 3D・シェーダー（6件）
+### 3D・シェーダー（7件）
 
 | スキル・ツール | 使いどころ | ライセンス |
 | --- | --- | --- |
@@ -70,6 +76,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 | [Cobe](https://github.com/shuding/cobe) | 拠点表示、グローバルネットワーク、データビジュアライゼーション。 | [MIT](https://github.com/shuding/cobe/blob/7e94076fa8c38707f4c9cd114ff4f7c5c880971e/LICENSE) |
 | [TWGL.js](https://github.com/greggman/twgl.js) | カスタムGLSLシェーダーを用いた背景演出やポストプロセスの実装。 | [MIT](https://github.com/greggman/twgl.js/blob/aa33c0aa5b095e57b9a5cde0cf241e66a6c95f2e/LICENSE.md) |
 | [Code Video Model](https://github.com/code-video-model/CodeVideoModel) | カメラ、物体の配置、動きの順番をコードで調整し、その条件をAI動画の仕上げへつなぐ。 | [Apache-2.0（コード）](https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/LICENSE) |
+| [3d-force-graph](https://github.com/vasturiano/3d-force-graph) | 関係の密度やクラスタを立体で見せ、カメラから全体を観察する。 | [MIT](https://github.com/vasturiano/3d-force-graph/blob/5ccd00f47d72a571319da70ccac080bb8e09709f/LICENSE) |
 
 ### 2D・ベクター（4件）
 
@@ -80,13 +87,21 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 | [Lottie Web](https://github.com/airbnb/lottie-web) | デザイナーが作成したベクターアニメーションのWeb・アプリ組み込み。 | [MIT](https://github.com/airbnb/lottie-web/blob/bede03d25d232826e0c9dca1733d542d8a7754fb/LICENSE.md) |
 | [PixiJS](https://github.com/pixijs/pixijs) | 大量のパーティクル演出、リッチな2Dビジュアル、ミニゲーム的表現。 | [MIT](https://github.com/pixijs/pixijs/blob/65552017d23255c1442a7d4ac7f0d49e3225fb1d/LICENSE) |
 
-### データ・図解（3件）
+### データ・図解（11件）
 
 | スキル・ツール | 使いどころ | ライセンス |
 | --- | --- | --- |
 | [deck.gl](https://github.com/visgl/deck.gl) | 数千〜数十万件の位置情報、移動フロー、密度分布の可視化。 | [MIT](https://github.com/visgl/deck.gl/blob/d9e395c935d962740e4b6debb7b63e1b4391b1b5/LICENSE) |
 | [D3](https://github.com/d3/d3) | カスタムチャート、インタラクティブなグラフ、統計データのトランジション表現。 | [ISC](https://github.com/d3/d3/blob/ca958d45217b4c15332d971b935451a6d4c978f4/LICENSE) |
 | [Manim Community](https://github.com/ManimCommunity/manim) | 数学、物理、コンピュータサイエンスの概念解説動画の作成。 | [MIT](https://github.com/ManimCommunity/manim/blob/a6d5cc02b430fb57d22add51236b6406fbf19d91/LICENSE) |
+| [Mermaid](https://github.com/mermaid-js/mermaid) | 制作フローやシーンの分岐を整理し、図解を順番に見せる。 | [MIT](https://github.com/mermaid-js/mermaid/blob/4e3a85e6d46a0326379e04db3463bb3b53a3ca94/LICENSE) |
+| [Chart.js](https://github.com/chartjs/Chart.js) | 数値の推移、比較、レポートの要点をグラフで伝える。 | [MIT](https://github.com/chartjs/Chart.js/blob/7169e65147a47f3720957a6f156a33c838ab9f57/LICENSE.md) |
+| [Apache ECharts](https://github.com/apache/echarts) | 複数系列、ヒートマップ、ダッシュボードの変化を説明する。 | [Apache-2.0](https://github.com/apache/echarts/blob/34f4d927eafe251f26f63afd3aeefa30f2feba30/LICENSE) |
+| [React Flow / Svelte Flow](https://github.com/xyflow/xyflow) | 制作工程、分岐、依存関係をノード単位で説明するUI。 | [MIT](https://github.com/xyflow/xyflow/blob/3d35b57317576b0916c0bfeaaedd573aaacc2839/LICENSE) |
+| [Plotly.js](https://github.com/plotly/plotly.js) | 波形や測定値、数式から得たデータの変化を可視化する。 | [MIT](https://github.com/plotly/plotly.js/blob/4862f6271046024e58cd25bfa771e81ffe2fdce6/LICENSE) |
+| [Nivo](https://github.com/plouc/nivo) | Reactの画面やテンプレートで、数値を差し替えるチャート。 | [MIT](https://github.com/plouc/nivo/blob/0dae2c32052a573f9f1d66ec1b453b572119b265/LICENSE.md) |
+| [AntV G6](https://github.com/antvis/G6) | サービス依存、組織、知識のつながりを配置と強調で見せる。 | [MIT](https://github.com/antvis/G6/blob/bdf6a55cd346afa5429e38083b380081734c6ff9/LICENSE) |
+| [Cytoscape.js](https://github.com/cytoscape/cytoscape.js) | 最短経路、接続関係、ネットワークの一部分を説明する。 | [MIT](https://github.com/cytoscape/cytoscape.js/blob/7ba634095d8954089ee5dc09ada0030f2dca134c/LICENSE) |
 
 ## 再現と編集の手順
 
@@ -98,6 +113,8 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 - [制作コードと再現手順](examples/README.md)
 - [使用制作スタック](docs/制作スタック.md)
 - [動きを詰める：実験記事の要約と実装の参照先](docs/動きを詰める.md)
+- [グラフと関係図：追加9件の用途と確認範囲](docs/データと図解.md)
+- [投稿15件から選ぶモーション制作スキル・ツール](docs/モーション制作スキル15選.md)
 
 使用バージョン・動画ファイル・コードの詳細は[data/preview-production.json](data/preview-production.json)、リポジトリの検証データは[data/verification.json](data/verification.json)に記録しています。
 
@@ -119,6 +136,7 @@ python -u -m http.server 0 --bind 127.0.0.1
 
 ## 関連ガイド
 
+- [Claude UI・UXデザインガイド](https://github.com/studio-yebisu/awesome-claude-ui-ux-design-ja)：画面設計・操作性・アクセシビリティのスキルを別リポジトリに整理。
 - [AIスライド制作ガイド](https://studio-yebisu.github.io/awesome-codex-ppt-skills-ja/)
 
 ## ライセンス

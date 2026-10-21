@@ -39,6 +39,44 @@
       "readme_path": "README.md"
     },
     {
+      "requested_repository": "antvis/G6",
+      "repository": "antvis/G6",
+      "url": "https://github.com/antvis/G6",
+      "homepage": "https://g6.antv.antgroup.com/",
+      "stars": 12330,
+      "archived": false,
+      "pushed_at": "2026-10-13T08:14:10Z",
+      "default_branch": "v5",
+      "commit_sha": "bdf6a55cd346afa5429e38083b380081734c6ff9",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/antvis/G6/blob/bdf6a55cd346afa5429e38083b380081734c6ff9/README.md",
+      "verified_at": "2026-10-13T12:13:13.359574+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "apache/echarts",
+      "repository": "apache/echarts",
+      "url": "https://github.com/apache/echarts",
+      "homepage": "https://echarts.apache.org",
+      "stars": 67493,
+      "archived": false,
+      "pushed_at": "2026-10-13T09:27:20Z",
+      "default_branch": "master",
+      "commit_sha": "34f4d927eafe251f26f63afd3aeefa30f2feba30",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/apache/echarts/blob/34f4d927eafe251f26f63afd3aeefa30f2feba30/README.md",
+      "verified_at": "2026-10-13T12:13:10.996171+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
       "requested_repository": "apimodels/claude-opus-5-5-video-prompts",
       "repository": "apimodels/claude-opus-5-5-video-prompts",
       "url": "https://github.com/apimodels/claude-opus-5-5-video-prompts",
@@ -94,6 +132,63 @@
       "verified_at": "2026-10-12T13:44:49.238457+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test",
       "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "chartjs/Chart.js",
+      "repository": "chartjs/Chart.js",
+      "url": "https://github.com/chartjs/Chart.js",
+      "homepage": "https://www.chartjs.org/",
+      "stars": 67732,
+      "archived": false,
+      "pushed_at": "2026-10-04T13:05:36Z",
+      "default_branch": "master",
+      "commit_sha": "7169e65147a47f3720957a6f156a33c838ab9f57",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/chartjs/Chart.js/blob/7169e65147a47f3720957a6f156a33c838ab9f57/README.md",
+      "verified_at": "2026-10-13T12:13:11.274148+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "code-video-model/CodeVideoModel",
+      "repository": "code-video-model/CodeVideoModel",
+      "url": "https://github.com/code-video-model/CodeVideoModel",
+      "homepage": "https://code-video-model.github.io",
+      "stars": 333,
+      "archived": false,
+      "pushed_at": "2026-10-13T01:45:05Z",
+      "default_branch": "main",
+      "commit_sha": "404e03d67c2977b441622ce94411470bb84984a8",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/README.md",
+      "verified_at": "2026-10-13T07:16:52.126447+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "cytoscape/cytoscape.js",
+      "repository": "cytoscape/cytoscape.js",
+      "url": "https://github.com/cytoscape/cytoscape.js",
+      "homepage": "https://js.cytoscape.org",
+      "stars": 11237,
+      "archived": false,
+      "pushed_at": "2026-10-13T01:33:49Z",
+      "default_branch": "unstable",
+      "commit_sha": "7ba634095d8954089ee5dc09ada0030f2dca134c",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/cytoscape/cytoscape.js/blob/7ba634095d8954089ee5dc09ada0030f2dca134c/README.md",
+      "verified_at": "2026-10-13T12:13:13.766583+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
     },
     {
       "requested_repository": "d3/d3",
@@ -327,6 +422,25 @@
       "readme_path": "README.md"
     },
     {
+      "requested_repository": "mermaid-js/mermaid",
+      "repository": "mermaid-js/mermaid",
+      "url": "https://github.com/mermaid-js/mermaid",
+      "homepage": "https://mermaid.ai/open-source/",
+      "stars": 90643,
+      "archived": false,
+      "pushed_at": "2026-10-13T09:03:44Z",
+      "default_branch": "develop",
+      "commit_sha": "4e3a85e6d46a0326379e04db3463bb3b53a3ca94",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/mermaid-js/mermaid/blob/4e3a85e6d46a0326379e04db3463bb3b53a3ca94/README.md",
+      "verified_at": "2026-10-13T12:13:10.897649+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
       "requested_repository": "microsoft/playwright",
       "repository": "microsoft/playwright",
       "url": "https://github.com/microsoft/playwright",
@@ -420,6 +534,44 @@
       "verified_at": "2026-10-12T13:44:46.531446+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test",
       "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "plotly/plotly.js",
+      "repository": "plotly/plotly.js",
+      "url": "https://github.com/plotly/plotly.js",
+      "homepage": "https://plotly.com/javascript/",
+      "stars": 18360,
+      "archived": false,
+      "pushed_at": "2026-10-08T14:18:55Z",
+      "default_branch": "main",
+      "commit_sha": "4862f6271046024e58cd25bfa771e81ffe2fdce6",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/plotly/plotly.js/blob/4862f6271046024e58cd25bfa771e81ffe2fdce6/README.md",
+      "verified_at": "2026-10-13T12:13:13.445353+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "plouc/nivo",
+      "repository": "plouc/nivo",
+      "url": "https://github.com/plouc/nivo",
+      "homepage": "https://nivo.rocks",
+      "stars": 14106,
+      "archived": false,
+      "pushed_at": "2026-07-21T02:46:40Z",
+      "default_branch": "master",
+      "commit_sha": "0dae2c32052a573f9f1d66ec1b453b572119b265",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/plouc/nivo/blob/0dae2c32052a573f9f1d66ec1b453b572119b265/README.md",
+      "verified_at": "2026-10-13T12:13:13.348041+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
     },
     {
       "requested_repository": "pmndrs/drei",
@@ -553,6 +705,25 @@
       "readme_path": "README.md"
     },
     {
+      "requested_repository": "vasturiano/3d-force-graph",
+      "repository": "vasturiano/3d-force-graph",
+      "url": "https://github.com/vasturiano/3d-force-graph",
+      "homepage": "https://vasturiano.github.io/3d-force-graph/example/large-graph/",
+      "stars": 6452,
+      "archived": false,
+      "pushed_at": "2026-09-29T22:40:12Z",
+      "default_branch": "master",
+      "commit_sha": "5ccd00f47d72a571319da70ccac080bb8e09709f",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/vasturiano/3d-force-graph/blob/5ccd00f47d72a571319da70ccac080bb8e09709f/README.md",
+      "verified_at": "2026-10-13T12:13:15.690775+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
       "requested_repository": "visgl/deck.gl",
       "repository": "visgl/deck.gl",
       "url": "https://github.com/visgl/deck.gl",
@@ -591,24 +762,44 @@
       "readme_path": "README.md"
     },
     {
-      "requested_repository": "code-video-model/CodeVideoModel",
-      "repository": "code-video-model/CodeVideoModel",
-      "url": "https://github.com/code-video-model/CodeVideoModel",
-      "homepage": "https://code-video-model.github.io",
-      "stars": 333,
+      "requested_repository": "wheresryan22/anatomy",
+      "repository": "wheresryan22/anatomy",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "homepage": "https://skills.wheresryan.sh/anatomy",
+      "stars": 7309,
       "archived": false,
-      "pushed_at": "2026-10-13T01:45:05Z",
+      "pushed_at": "2026-10-13T08:19:55Z",
       "default_branch": "main",
-      "commit_sha": "404e03d67c2977b441622ce94411470bb84984a8",
-      "github_license": "Apache-2.0",
+      "commit_sha": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f",
+      "github_license": "MIT",
       "license_paths": [
         "LICENSE"
       ],
       "readme_path": "README.md",
-      "readme_url": "https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/README.md",
-      "verified_at": "2026-10-13T07:16:52.126447+00:00",
+      "readme_url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/README.md",
+      "verified_at": "2026-10-13T11:40:34.362663+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "xyflow/xyflow",
+      "repository": "xyflow/xyflow",
+      "url": "https://github.com/xyflow/xyflow",
+      "homepage": "https://xyflow.com",
+      "stars": 38649,
+      "archived": false,
+      "pushed_at": "2026-10-12T16:54:31Z",
+      "default_branch": "main",
+      "commit_sha": "3d35b57317576b0916c0bfeaaedd573aaacc2839",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/xyflow/xyflow/blob/3d35b57317576b0916c0bfeaaedd573aaacc2839/README.md",
+      "verified_at": "2026-10-13T12:13:10.941325+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test"
     }
   ],
-  "errors": []
+  "errors": [],
+  "last_updated_on": "2026-10-13"
 }

@@ -14,10 +14,14 @@
 
 - `data/curation.json`：分類、日本語説明、用途、条件。
 - `data/verification.json`：一次資料の取得日・コミット・star数。
+- `data/motion-resources.json`：作例付きカタログとは別に紹介する制作スキルの用途・導入条件・一次資料。
+- `data/source-post-*.json`：紹介投稿からの掲載先の仕分けと、既掲載項目との対応。
 - `templates/`：トップ、作例一覧、制作ガイド、READMEの生成元。
 - `docs/`：作例の制作記録、制作スタック、掲載ツールの選び方。
 - `assets/`、`examples/`：オリジナルの表示と見本。
 
 再生成：`python scripts/build_site.py`。検査：`python scripts/check_site.py`。
+
+追加の制作スキルは `docs/モーション制作スキル15選.md` と `templates/guide.html` に掲載しています。資料確認だけの項目を、動作確認済みの作例や総作例数に含めないでください。UI・UXの画面設計や操作性は別リポジトリ `awesome-claude-ui-ux-design-ja` で扱い、こちらでは映像制作と動きの表現を扱います。
 
 取得した第三者READMEや作例を一括で取り込まず、リンク、要約、必要な帰属表示を残してください。秘密情報、認証情報、モデル、実行ログをコミットしないでください。

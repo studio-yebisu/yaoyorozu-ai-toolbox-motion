@@ -61,5 +61,12 @@
     "path": "skills/kinetic-typography/SKILL.md",
     "commit": "fccc94bd325d824235ee9e715e65abde57b6513a",
     "source_url": "https://github.com/iart-ai/kinetic-typography-skills/blob/fccc94bd325d824235ee9e715e65abde57b6513a/skills/kinetic-typography/SKILL.md"
+  },
+  {
+    "preview_id": "anatomy",
+    "repository": "wheresryan22/anatomy",
+    "path": "SKILL.md",
+    "commit": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f",
+    "source_url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/SKILL.md"
   }
 ]

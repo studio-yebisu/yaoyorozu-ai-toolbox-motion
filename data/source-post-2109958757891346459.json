@@ -1,0 +1,178 @@
+{
+  "source_post_url": "https://x.com/RoundtableSpace/status/2109958757891346459",
+  "checked_on": "2026-10-13",
+  "timezone": "Asia/Tokyo",
+  "retrieval": "Source post read in the live X browser and all 15 shortened links resolved; new motion resources checked through the public GitHub API at fixed commits.",
+  "scope": "All 15 named repositories, in source order. Post body, media, and upstream skill bodies are not redistributed.",
+  "counts": {
+    "listed_in_post": 15,
+    "already_in_motion_catalog": 7,
+    "new_motion_reference_resources": 7,
+    "routed_to_ui_ux_repository": 1,
+    "new_rendered_examples": 0
+  },
+  "decisions": [
+    {
+      "source_order": 1,
+      "repository": "AbubakrChan/product-launch-motion",
+      "id": "product-launch-motion",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "dbd1db4f986b4f801ab9fc434d828fb906685d30",
+      "readme_url": "https://github.com/AbubakrChan/product-launch-motion/blob/dbd1db4f986b4f801ab9fc434d828fb906685d30/README.md",
+      "verified_at": "2026-10-13T13:19:04.909286+00:00"
+    },
+    {
+      "source_order": 2,
+      "repository": "charlie947/motion-graphics-skills",
+      "id": "motion-graphics-skills",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#motion-graphics-skills",
+      "readme_url": "https://github.com/charlie947/motion-graphics-skills/blob/229022ebca76972e119e36ada23a1648d51665ab/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 3,
+      "repository": "howseen-ai/claude-motion-design",
+      "id": "claude-motion-design",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#claude-motion-design",
+      "readme_url": "https://github.com/howseen-ai/claude-motion-design/blob/3d90d349ef3fdde9b7e89de4df4a2159c9e8697f/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 4,
+      "repository": "nateherkai/hyperframes-student-kit",
+      "id": "hyperframes-student-kit",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86",
+      "readme_url": "https://github.com/nateherkai/hyperframes-student-kit/blob/0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86/README.md",
+      "verified_at": "2026-10-13T13:19:05.206981+00:00"
+    },
+    {
+      "source_order": 5,
+      "repository": "Barty-Bart/motion-graphics",
+      "id": "barty-motion-graphics",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "3d83d987d658601d8a1269eb691622bdcd427335",
+      "readme_url": "https://github.com/Barty-Bart/motion-graphics/blob/3d83d987d658601d8a1269eb691622bdcd427335/README.md",
+      "verified_at": "2026-10-13T13:19:04.898832+00:00"
+    },
+    {
+      "source_order": 6,
+      "repository": "cth9191/animate",
+      "id": "animate-procedural",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "7e5eb56feb2dd573f890e1b7b34748af43d58263",
+      "readme_url": "https://github.com/cth9191/animate/blob/7e5eb56feb2dd573f890e1b7b34748af43d58263/README.md",
+      "verified_at": "2026-10-13T13:19:04.972878+00:00"
+    },
+    {
+      "source_order": 7,
+      "repository": "whaleyxbt/claude-motion",
+      "id": "claude-motion",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#claude-motion",
+      "readme_url": "https://github.com/whaleyxbt/claude-motion/blob/e627941543d9988b155dc610bb9cc0115a5e365e/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 8,
+      "repository": "haidrrrry/claude-remotion-skill",
+      "id": "claude-remotion-skill",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383",
+      "readme_url": "https://github.com/haidrrrry/claude-remotion-skill/blob/1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383/README.md",
+      "verified_at": "2026-10-13T13:19:07.538706+00:00"
+    },
+    {
+      "source_order": 9,
+      "repository": "motiondivision/motion",
+      "id": "motion",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#motion",
+      "readme_url": "https://github.com/motiondivision/motion/blob/e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 10,
+      "repository": "199-biotechnologies/motion-dev-animations-skill",
+      "decision": "routed_to_ui_ux_repository",
+      "route": "ui_ux",
+      "destination_repository": "awesome-claude-ui-ux-design-ja",
+      "reason": "Motion-based UI implementation skills are collected with UI/UX design; the underlying Motion library remains in the motion examples.",
+      "destination_repository_url": "https://github.com/studio-yebisu/awesome-claude-ui-ux-design-ja"
+    },
+    {
+      "source_order": 11,
+      "repository": "heygen-com/hyperframes",
+      "id": "hyperframes",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#hyperframes",
+      "readme_url": "https://github.com/heygen-com/hyperframes/blob/fbbc4e88c59c01bfec69368a9a587d3438a7d32a/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 12,
+      "repository": "remotion-dev/remotion",
+      "id": "remotion",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#remotion",
+      "readme_url": "https://github.com/remotion-dev/remotion/blob/d5f455390933ab7a48d6ca79a5f4f0223234a802/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 13,
+      "repository": "remotion-dev/skills",
+      "id": "remotion-skills",
+      "decision": "already_listed_no_duplicate",
+      "route": "motion",
+      "catalog_url": "projects.html#remotion-skills",
+      "readme_url": "https://github.com/remotion-dev/skills/blob/7ba4dcf8ebe1626b00baa41e1f2478113719b60b/README.md",
+      "verification_basis": "Existing catalog primary-source snapshot; not newly runtime-tested for this post."
+    },
+    {
+      "source_order": 14,
+      "repository": "greensock/gsap-skills",
+      "id": "gsap-skills",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "readme_url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/README.md",
+      "verified_at": "2026-10-13T13:19:07.538796+00:00"
+    },
+    {
+      "source_order": 15,
+      "repository": "LottieFiles/motion-design-skill",
+      "id": "lottiefiles-motion-design",
+      "decision": "added_as_verified_reference_without_new_preview",
+      "route": "motion",
+      "resource_record": "data/motion-resources.json",
+      "commit_sha": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "readme_url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/README.md",
+      "verified_at": "2026-10-13T13:19:07.882232+00:00"
+    }
+  ],
+  "interpretation": [
+    "A skill, a runtime library, and a rendering engine have different roles; a list of 15 repositories is not 15 interchangeable video generators.",
+    "New motion references are separate from the existing 42 independently rendered examples.",
+    "Source-post claims about quality, speed, cost or model performance are not adopted as verified results.",
+    "Skill licenses do not automatically license engine dependencies, sample films, brand materials, fonts, music or external services."
+  ]
+}
