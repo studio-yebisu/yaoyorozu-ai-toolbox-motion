@@ -21,7 +21,7 @@ Claude MotionはAnthropic公式のベータ機能です。Claudeのチャット�
 - [Claude /motion](https://charliehills.substack.com/p/claude-motion-graphics)：2026年10月11日公開。通常のチャットから制作を始める手順と、最初に渡すブリーフを説明しています。記事の後半は無料購読者向けです。
 - [16 Claude Motion prompts (and my brief)](https://charliehills.substack.com/p/16-claude-motion-prompts-and-my-brief)：作例16種、共通ブリーフ、場面の一行、書き出し設定を案内しています。ブリーフと16種のプロンプト本体は無料購読登録が必要です。
 
-制作の入口と、複数の映像で見た目をそろえる考え方が参考になるため、[制作ガイド](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#claude-motion)に追加しました。ガイドに載せた日本語の短尺ブリーフは本ガイドの独自例です。
+制作の入口と、複数の映像で見た目をそろえる考え方が参考になるため、[制作ガイド](https://studio-yebisu.github.io/yaoyorozu-ai-toolbox-motion/guide.html#claude-motion)に追加しました。ガイドに載せた日本語の短尺ブリーフは本ガイドの独自例です。
 
 ## 選ぶときの視点
 

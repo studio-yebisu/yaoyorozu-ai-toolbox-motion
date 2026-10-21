@@ -1,4 +1,4 @@
-# Claude モーショングラフィック制作ガイド
+# 八百万図AIツールボックス｜モーション
 
 Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。{{TOTAL}}件のスキル・ツール・参考資料について、元の役割、機能デモ、GIF、編集可能な実装コードを掲載しています。
 
@@ -68,8 +68,8 @@ python -u -m http.server 0 --bind 127.0.0.1
 
 ## 関連ガイド
 
-- [Claude UI・UXデザインガイド](https://github.com/studio-yebisu/awesome-claude-ui-ux-design-ja)：画面設計・操作性・アクセシビリティのスキルを別リポジトリに整理。
-- [AIスライド制作ガイド](https://studio-yebisu.github.io/awesome-codex-ppt-skills-ja/)
+- [Claude UI・UXデザインガイド](https://github.com/studio-yebisu/yaoyorozu-ai-toolbox-ui-ux)：画面設計・操作性・アクセシビリティのスキルを別リポジトリに整理。
+- [AIスライド制作ガイド](https://studio-yebisu.github.io/yaoyorozu-ai-toolbox-slides/)
 
 ## ライセンス
 

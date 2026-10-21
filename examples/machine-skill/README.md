@@ -4,7 +4,7 @@ AirsupのMachine Skillは、機械の名前や見せたい動作をAIエージ�
 
 ここに掲載したコンプレッサーは、その機能を試すためのデモです。回転数を変え、断面・分解・X線・スロー・部品名・吸気弁の故障を操作できます。
 
-**[ブラウザで操作する](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/examples/machine-skill/)** · [28秒の紹介動画](../../assets/previews/machine-skill.mp4) · [GIF](../../assets/previews/machine-skill.gif)
+**[ブラウザで操作する](https://studio-yebisu.github.io/yaoyorozu-ai-toolbox-motion/examples/machine-skill/)** · [28秒の紹介動画](../../assets/previews/machine-skill.mp4) · [GIF](../../assets/previews/machine-skill.gif)
 
 Codexが[AirsupのMachine Skill](https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/SKILL.md)を参照して、機械形状、計算、画面、映像構成を制作しました。実行キットと録画ツールは同じコミットから取得しています。
 

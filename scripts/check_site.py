@@ -88,7 +88,7 @@ def main():
         with Image.open(ROOT/"assets"/filename) as image:
             assert image.size == (1200,630)
             image.verify()
-    site = "https://studio-yebisu.github.io/awesome-claude-motion-design-ja/"
+    site = "https://studio-yebisu.github.io/yaoyorozu-ai-toolbox-motion/"
     for filename in ("index.html", "projects.html", "guide.html"):
         page = pages[(ROOT/filename).resolve()]
         url = site + ("" if filename == "index.html" else filename)

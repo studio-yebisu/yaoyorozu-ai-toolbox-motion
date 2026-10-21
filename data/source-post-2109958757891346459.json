@@ -114,7 +114,7 @@
       "route": "ui_ux",
       "destination_repository": "awesome-claude-ui-ux-design-ja",
       "reason": "Motion-based UI implementation skills are collected with UI/UX design; the underlying Motion library remains in the motion examples.",
-      "destination_repository_url": "https://github.com/studio-yebisu/awesome-claude-ui-ux-design-ja"
+      "destination_repository_url": "https://github.com/studio-yebisu/yaoyorozu-ai-toolbox-ui-ux"
     },
     {
       "source_order": 11,

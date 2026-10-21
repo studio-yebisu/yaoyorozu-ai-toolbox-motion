@@ -8,8 +8,8 @@ import json
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-REPO_URL = "https://github.com/studio-yebisu/awesome-claude-motion-design-ja"
-SITE_URL = "https://studio-yebisu.github.io/awesome-claude-motion-design-ja/"
+REPO_URL = "https://github.com/studio-yebisu/yaoyorozu-ai-toolbox-motion"
+SITE_URL = "https://studio-yebisu.github.io/yaoyorozu-ai-toolbox-motion/"
 esc = html.escape
 SOCIAL_IMAGE = SITE_URL + "assets/og-card-motion-v4.png"
 SOCIAL_ALT = "モーショングラフィック制作ガイド。動く作例と6カテゴリの制作スタック。"
@@ -20,8 +20,8 @@ def social_metadata(path, title, description):
     values = [
         ("property", "og:type", "website"),
         ("property", "og:locale", "ja_JP"),
-        ("name", "author", "Studio Yebisu"),
-        ("property", "og:site_name", "Claude モーション制作ガイド / Studio Yebisu"),
+        ("name", "author", "studio_yebisu"),
+        ("property", "og:site_name", "Claude モーション制作ガイド / 八百万図AIツールボックス"),
         ("property", "og:title", title),
         ("property", "og:description", description),
         ("property", "og:url", url),
@@ -121,7 +121,7 @@ def build():
     filters += "".join(f'<button class="filter-chip" type="button" data-category-filter="{c["id"]}" aria-pressed="false">{c["short"]} <span>{counts[c["id"]]}</span></button>' for c in categories.values())
     creator = curation["creator"]
     replacements = {"{{TOTAL}}":str(total), "{{PREVIEW_TOTAL}}":str(len(production)), "{{CATEGORY_CARDS}}":"\n".join(cards), "{{FILTERS}}":filters, "{{PROJECT_CARDS}}":"\n".join(project_card(p,categories) for p in projects), "{{SITE_URL}}":SITE_URL, "{{REPO_URL}}":REPO_URL}
-    social_pages = {'index.html': ('Claude モーショングラフィック制作ガイド｜Studio Yebisu', '{{TOTAL}}本の作例から選ぶモーショングラフィック制作ガイド。GIF・コード付きでツールと手法を比較。'), 'projects.html': ('スキル・ツールとデモ｜Claude モーショングラフィック制作ガイド', '{{TOTAL}}件のスキル・ツール・資料を用途から検索。元の役割と、機能デモで使った部分を紹介。'), 'guide.html': ('制作の始め方｜Claude モーショングラフィック制作ガイド', 'モーショングラフィック制作の始め方。HTML動画、React動画、Web UI、解説動画の4ルートを解説。')}
+    social_pages = {'index.html': ('八百万図AIツールボックス｜モーション', '{{TOTAL}}本の作例から選ぶモーショングラフィック制作ガイド。GIF・コード付きでツールと手法を比較。'), 'projects.html': ('スキル・ツールとデモ｜八百万図AIツールボックス', '{{TOTAL}}件のスキル・ツール・資料を用途から検索。元の役割と、機能デモで使った部分を紹介。'), 'guide.html': ('制作の始め方｜八百万図AIツールボックス', 'モーショングラフィック制作の始め方。HTML動画、React動画、Web UI、解説動画の4ルートを解説。')}
     for name in ("index.html", "projects.html", "guide.html"):
         text = (ROOT / "templates" / name).read_text(encoding="utf-8")
         text = text.replace("{{SOCIAL_META}}", social_metadata(name, *social_pages[name]))
