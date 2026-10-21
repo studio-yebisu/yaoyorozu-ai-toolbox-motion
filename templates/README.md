@@ -1,6 +1,6 @@
 # Claude モーショングラフィック制作ガイド
 
-Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。{{TOTAL}}のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
+Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。{{TOTAL}}件のスキル・ツール・参考資料について、元の役割、機能デモ、GIF、編集可能な実装コードを掲載しています。
 
 **[サイトを開く]({{SITE_URL}})** · **[{{PREVIEW_TOTAL}}本の作例を見る]({{SITE_URL}}projects.html)** · **[制作の始め方]({{SITE_URL}}guide.html)**
 
@@ -15,6 +15,8 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 - **Claude Motion（公式ベータ）**：[チャットから制作する方法]({{SITE_URL}}guide.html#claude-motion)。Team・Enterpriseの利用条件と、Charlie Hillsの制作手順・16種の作例記事を紹介しています。
 - **動きを詰める方法**：[指示の具体化とフレーム単位の修正]({{SITE_URL}}guide.html#motion-direction)。実験記事の要約と、コピーして使える修正ブリーフを掲載しています。
 - **グラフと関係図**：[数値・工程・ネットワークを動かす]({{SITE_URL}}guide.html#data-visualization)。Chart.js、ECharts、Mermaid、React Flowなど9件を追加し、用途と独自作例を比較できます。
+
+- **日本語の制作スキル**：[Motion Reel]({{SITE_URL}}guide.html#motion-reel)。ブリーフ、時刻指定描画、音の同期、フレームレビュー、MP4書き出しをつなぐ独自スキルです。
 - **40秒の紹介動画**：作例31本を用いた紹介映像。[制作コード・構成表](examples/remotion/PROMO_README.md)（Suno楽曲含む）も確認できます。
 
 ## 4つの制作ルート
@@ -39,6 +41,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 - [ツールの選定基準](docs/調査ノート.md)
 - [ライセンスと出典一覧](docs/出典とライセンス.md)
 - [作例の制作記録](docs/作例の制作記録.md)
+- [全件のツール・スキルとデモの対応、実行範囲](docs/ツールと作例の対応.md)
 - [制作コードと再現手順](examples/README.md)
 - [使用制作スタック](docs/制作スタック.md)
 - [動きを詰める：実験記事の要約と実装の参照先](docs/動きを詰める.md)
@@ -59,7 +62,7 @@ python -u -m http.server 0 --bind 127.0.0.1
 
 実行後にターミナルに表示されたURLをブラウザで開きます。公開はGitHub Pagesの`main`ブランチ（ルートディレクトリ）です。
 
-編集対象ファイルは[data/curation.json](data/curation.json)、[templates](templates/)、[assets](assets/)です。`index.html`、`projects.html`、`guide.html`、`data/projects.json`、本READMEはスクリプトによるビルド生成物です。詳細は[コントリビューションガイド](CONTRIBUTING.md)を参照してください。
+編集対象ファイルは[data/curation.json](data/curation.json)、[templates](templates/)、[assets](assets/)です。`index.html`、`projects.html`、`guide.html`、`data/projects.json`、本README、[ツールと作例の対応](docs/ツールと作例の対応.md)はスクリプトによるビルド生成物です。詳細は[コントリビューションガイド](CONTRIBUTING.md)を参照してください。
 
 一次資料の更新には[scripts/collect_sources.py](scripts/collect_sources.py)を使用します（`--evidence-dir`には公開リポジトリ外のパスを指定）。
 

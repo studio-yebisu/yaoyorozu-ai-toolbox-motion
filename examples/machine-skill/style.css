@@ -1,0 +1,68 @@
+.study-home { position:fixed; left:4.2vw; top:3.8vh; z-index:20; color:#222; font:500 11px/1.5 Inter,system-ui,sans-serif; letter-spacing:.09em; text-decoration:none }
+.study-home span { color:#797972; font-weight:400 }
+.study-home .home-arrow { display:block; margin-top:5px; letter-spacing:0; color:#555 }
+.lab-prompt { top:11.5vh; font-family:Inter,"Yu Gothic UI",sans-serif; font-size:clamp(11px,1.1vw,16px); max-width:62vw }
+.lab-pills { top:4vh }
+.initial-title { display:none }
+#lab-gl { mask-image:linear-gradient(to right,#000 0%,#000 61%,transparent 68.2%) }
+.lab-labels svg { clip-path:inset(0 31.8% 0 0) }
+h1.lab-title { margin:0; font-weight:400; line-height:.94; font-size:clamp(34px,4.5vw,78px) }
+h1.lab-title i { font-family:Inter,"Yu Gothic UI",sans-serif; font-size:clamp(11px,1.08vw,18px); font-style:normal; font-weight:400; line-height:1.7; letter-spacing:0; margin-top:12px; color:#727168 }
+.lab-side { width:27vw; top:49%; right:4.2vw }
+.lab-big { font-size:clamp(52px,7.2vw,115px) }
+.lab-big i { font-size:.32em; margin-left:9px }
+.lab-sub { font-family:Inter,"Yu Gothic UI",sans-serif; font-size:clamp(11px,1vw,16px); line-height:1.8; white-space:normal }
+.lab-sub span { display:block; color:#7d7b73 }
+.lab-modes { max-width:63vw; font-family:Inter,"Yu Gothic UI",sans-serif; bottom:6vh; gap:6px }
+.lab-modes button { padding:.55em .85em; font-size:11px; background:#f3f2ee }
+.lab-modes button:focus-visible, input:focus-visible, a:focus-visible, summary:focus-visible { outline:2px solid #167c70; outline-offset:4px }
+.lab-scale { bottom:calc(6vh + 5em) }
+.lab-how { width:27vw; bottom:4.5vh; font-family:Inter,"Yu Gothic UI",sans-serif }
+.lab-how[open] { padding:18px; max-height:70vh; overflow:auto; border:1px solid #d2d0c8; background:#f3f2ee; box-shadow:0 8px 30px #0001; z-index:30 }
+.lab-how .body { margin-top:12px; font-size:12px }
+.lab-how a { color:#27675a }
+.lab-labels { font-family:Inter,"Yu Gothic UI",sans-serif }
+.lab-beat { font-family:Inter,"Yu Gothic UI",sans-serif; font-size:clamp(14px,1.55vw,27px); max-width:86vw; align-items:flex-start; line-height:1.45 }
+.lab-beat b,.lab-beat div>span { display:block }
+.lab-film .study-home .home-arrow { display:none }
+.machine-gallery .study-home .home-arrow { display:none }
+.lab-film .lab-modes { max-width:none; bottom:5vh }
+.lab-film .lab-prompt { font-size:clamp(11px,1.15vw,19px) }
+.lab-film .lab-beat { background:rgba(243,242,238,.94); padding:10px 13px; border-left:2px solid #adb5a7; max-width:55vw; bottom:3.8vh }
+.lab-no { letter-spacing:.12em }
+.loading { position:fixed; inset:0; z-index:50; display:grid; place-content:center; background:#f3f2ee; color:#555; font:14px Inter,system-ui,sans-serif; gap:15px; text-align:center }
+.loading.failed { inset:auto; left:15px; right:15px; top:100px; padding:25px; border:1px solid #d2d0c8 }
+.loading a { color:#167c70 }
+@media(max-width:760px) {
+  #lab-gl { mask-image:linear-gradient(to bottom,transparent 0%,#000 12%,#000 41%,transparent 47%) }
+  .lab-labels svg { clip-path:inset(0 0 55% 0) }
+  .study-home { left:18px; top:18px; font-size:10px }
+  .study-home .home-arrow { display:inline; margin-left:14px }
+  .lab-prompt { top:65px; left:18px; right:18px; max-width:none; line-height:1.6 }
+  .lab-side { left:20px; right:20px; bottom:150px; top:auto; width:auto; transform:none }
+  h1.lab-title { font-size:32px }
+  h1.lab-title i { margin-top:7px; font-size:11px }
+  .lab-metric { margin-top:14px }
+  .lab-big { font-size:58px }
+  .lab-sub { font-size:11px; line-height:1.7 }
+  .lab-ctl { margin-top:12px }
+  .lab-modes { left:18px; right:18px; bottom:28px; max-width:none; gap:6px }
+  .lab-modes button { padding:7px 10px; font-size:11px }
+  .lab-modes kbd { display:none }
+  .lab-pills,.lab-how,.lab-scale { display:none }
+  .lab-film .lab-side { bottom:130px }
+  .lab-film .lab-beat { left:18px; bottom:22px; max-width:90vw; font-size:13px }
+}
+@media(prefers-reduced-motion:reduce) { * { animation:none!important; transition:none!important } }
+@media(max-width:760px) {
+  .machine-gallery .lab-prompt { display:none }
+  .machine-gallery #lab-gl { mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 36%,transparent 43%) }
+  .machine-gallery .lab-side { bottom:100px }
+  .machine-gallery h1.lab-title { font-size:26px }
+  .machine-gallery h1.lab-title i { font-size:10px; margin-top:4px }
+  .machine-gallery .lab-no { font-size:10px }
+  .machine-gallery .lab-metric { margin-top:9px }
+  .machine-gallery .lab-big { font-size:44px }
+  .machine-gallery .lab-sub { font-size:10px; line-height:1.6 }
+  .machine-gallery .lab-ctl { margin-top:8px }
+}

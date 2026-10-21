@@ -4,9 +4,9 @@
   "previews": {
     "remotion-skills": {
       "id": "remotion-skills",
-      "title": "リリースノートを一本の映像に",
-      "role": "Remotionスキル活用",
-      "description": "リリースノートの項目を、場面ごとのマスクと弾む動きで見せる短い映像。",
+      "title": "Sequenceとspringでリリースノートを場面に分ける",
+      "role": "公式スキルの制作規則を適用",
+      "description": "Remotion Agent Skillsのremotion-markupを参照し、Sequenceのローカルフレーム、文字のマスク、springでリリースノートの項目を演出しています。",
       "source_file": "examples/remotion/src/ReleaseNotes.tsx",
       "version": "Remotion 4.0.535",
       "poster_time": 4.5,
@@ -33,13 +33,14 @@
           "bytes": 35432,
           "sha256": "44ba58884991403f4e15a5b3f388bf302b2649813ca9e1e39c1060aaac3c8f76"
         }
-      }
+      },
+      "scope": "remotion-markupの構成・アニメーション規則を適用。描画と書き出しはRemotion。"
     },
     "remotion": {
       "id": "remotion",
-      "title": "一つの構成から、三つの変化へ",
-      "role": "React動画",
-      "description": "一つのReact構成から、入力値を変えて編集・ローンチ・製品の三つのデザインを見せます。",
+      "title": "Reactの共通構成を三つのデザイン値で描く",
+      "role": "動画制作エンジンを実行",
+      "description": "RemotionのuseCurrentFrame、interpolate、springで、同じReact構成を編集・ローンチ・製品の三つのデザイン値で描き、動画にしています。",
       "source_file": "examples/remotion/src/VariantFilm.tsx",
       "version": "Remotion 4.0.535 / React 19.2.3",
       "poster_time": 4.5,
@@ -66,13 +67,14 @@
           "bytes": 25264,
           "sha256": "f2482dc3e6ffa6c20df09eb7023078499890b3d62f969259368fbfb7ee65d844"
         }
-      }
+      },
+      "scope": "Reactの共通構成とフレーム由来の動きをレンダリング。公式スキルの適用例は別項目に掲載。"
     },
     "motion-canvas": {
       "id": "motion-canvas",
-      "title": "コードを書き換えると、リズムも変わる",
-      "role": "コードと図形の連動",
-      "description": "コードの書き換えと図形のリズムを連動させ、TypeScriptの時間軸で場面を組み立てた映像。",
+      "title": "TypeScriptの時間軸でコードと図形を動かす",
+      "role": "図解アニメーションエンジンを実行",
+      "description": "Motion CanvasのScene、Code、Rectとジェネレーターの時間軸で、コードの書き換えと図形の変化を連動させています。",
       "source_file": "examples/motion-canvas/src/scene.tsx",
       "version": "Motion Canvas 3.17.2",
       "poster_time": 4.5,
@@ -101,13 +103,14 @@
         }
       },
       "runtime_feature": "Motion Canvas Renderer, generator-based scene, Code morph + Rect signal tweens",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "TypeScriptのScene・Code・図形アニメーションと動画書き出しを実行。"
     },
     "hyperframes": {
       "id": "hyperframes",
-      "title": "HTMLをフレーム単位の動画へ",
-      "role": "HTML動画",
-      "description": "HTMLの文字と図形をタイムラインで動かし、HyperFramesでフレーム単位のMP4へ書き出した映像。",
+      "title": "HTMLとGSAPのタイムラインをMP4へ出力する",
+      "role": "動画制作エンジンを実行",
+      "description": "HyperFramesのコンポジションにGSAPの時刻指定できるタイムラインを登録し、HTMLの文字と図形をフレーム単位でMP4へ書き出しています。",
       "source_file": "examples/hyperframes/index.html",
       "version": "HyperFrames 0.8.150",
       "poster_time": 3.5,
@@ -134,13 +137,14 @@
           "bytes": 16596,
           "sha256": "4bf5af494fde00c998778590d2237c7f92595df58d8b9fe90a1dab9bc939806f"
         }
-      }
+      },
+      "scope": "HTMLのコンポジション登録・描画・動画書き出しを実行。"
     },
     "ffmpeg": {
       "id": "ffmpeg",
-      "title": "数式だけで描く、流れる信号",
-      "role": "数式から映像を生成",
-      "description": "数式で模様と文字を描き、流れる信号をFFmpegで直接動画にした作品。",
+      "title": "数式とフィルタだけで動画を生成する",
+      "role": "メディア処理ツールを実行",
+      "description": "FFmpegのlavfi、geqの時刻付き数式、drawtextで模様と文字を描き、入力映像を使わずH.264動画を生成しています。",
       "source_file": "examples/ffmpeg/render_signal.py",
       "version": "FFmpeg 8.1.2",
       "poster_time": 4,
@@ -169,13 +173,14 @@
         }
       },
       "runtime_feature": "lavfi, geq time expression, drawtext, H.264 encoding",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "入力映像を使わない生成フィルタとH.264エンコードを実行。"
     },
     "manim": {
       "id": "manim",
-      "title": "円を重ねて、一筆の形を描く",
-      "role": "数式・図解動画",
-      "description": "四つの周波数を持つ円を重ね、その動きで一筆の形を描く数学アニメーション。",
+      "title": "周波数の違う円を合成して軌跡を描く",
+      "role": "数学アニメーションエンジンを実行",
+      "description": "Manim CommunityのValueTracker、always_redraw、CircleとLineで四つの周波数を合成し、円の先端が描く軌跡を動画へ出力しています。",
       "source_file": "examples/manim/epicycles.py",
       "version": "Manim Community 0.22.0",
       "poster_time": 5.8,
@@ -202,13 +207,14 @@
           "bytes": 15726,
           "sha256": "1c580e69fbe5abc30e6208a7888ba5e7e3a165f98ed7f11627a9f6e48b9d0c00"
         }
-      }
+      },
+      "scope": "Pythonの図形と数理モデルをアニメーション化し、動画出力。"
     },
     "gsap": {
       "id": "gsap",
-      "title": "活字棚から、言葉を組み上げる",
-      "role": "文字とタイムライン",
-      "description": "活字を組み上げ、校正し、棚へ戻す。文字と行のマスクをタイムラインでつないだ映像。",
+      "title": "文字分割とマスクをタイムラインで制御する",
+      "role": "アニメーションライブラリを実行",
+      "description": "GSAPのtimeline、SplitText、行マスク、staggerを使い、活字が棚から集まり、校正され、戻る一連の動きを任意時刻へ移動できるようにしています。",
       "source_file": "examples/runtime/scenes/gsap.js",
       "version": "GSAP 3.15.0",
       "poster_time": 4,
@@ -237,13 +243,14 @@
         }
       },
       "runtime_feature": "gsap.timeline labels + timeline.seek(frame / 30); SplitText.create words/chars, and lines with mask: lines; function-based values; stagger { each, from: end }",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "timeline・SplitText・行マスク・stagger・任意時刻の移動を使用。"
     },
     "three": {
       "id": "three",
-      "title": "360本の柱が、31の形になる",
-      "role": "3D・材質・照明",
-      "description": "360本の柱が波から「31」の形へ集まり、再び波へ。材質、照明、影、カメラで立体感をつくります。",
+      "title": "インスタンス描画で柱を波から文字へ変形する",
+      "role": "3D描画ライブラリを実行",
+      "description": "Three.jsのInstancedMeshで360本の柱を波と文字の形へ変形。材質、環境光、影とカメラを組み合わせて描いています。",
       "source_file": "examples/runtime/scenes/three.js",
       "version": "Three.js 0.186.1",
       "poster_time": 4,
@@ -272,13 +279,14 @@
         }
       },
       "runtime_feature": "InstancedMesh (360) with per-instance matrix and color; MeshPhysicalMaterial clearcoat; RoomEnvironment via PMREMGenerator; NeutralToneMapping; PCF shadows; canvas-path glyph mask; dolly-only PerspectiveCamera",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "InstancedMesh・材質・照明・影・カメラを使った3D描画。"
     },
     "twgl": {
       "id": "twgl",
-      "title": "GLSLが描く、有機的な帯",
-      "role": "GLSLシェーダー",
-      "description": "時刻に沿って色と輪郭が流れる、有機的な帯。GLSLとTWGLで描いたシェーダー作品。",
+      "title": "GLSLへ時刻を渡して帯の色と形を変える",
+      "role": "WebGLヘルパーを使用",
+      "description": "TWGL.jsでシェーダーとバッファを準備し、独自GLSLへ時刻のuniformを渡して、有機的な帯の輪郭と色を変えています。",
       "source_file": "examples/runtime/scenes/twgl.js",
       "version": "TWGL.js 7.0.0",
       "poster_time": 4,
@@ -307,13 +315,14 @@
         }
       },
       "runtime_feature": "createProgramInfo, shader uniforms, WebGL drawBufferInfo",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "WebGL呼び出しを補助するライブラリを使用。模様はこのガイドの独自GLSL。"
     },
     "cobe": {
       "id": "cobe",
-      "title": "小さな地球で、拠点をつなぐ",
-      "role": "地球儀・マーカー",
-      "description": "東京・ロンドン・ニューヨークのマーカーを載せ、点で描いた小さな地球を回転させます。",
+      "title": "回転する地球儀に拠点マーカーを載せる",
+      "role": "地球儀ライブラリを実行",
+      "description": "CobeのcreateGlobeで点群の地球儀を描き、東京・ロンドン・ニューヨークの緯度経度マーカーと回転角を指定しています。",
       "source_file": "examples/runtime/scenes/cobe.js",
       "version": "Cobe 2.0.1",
       "poster_time": 2,
@@ -342,13 +351,14 @@
         }
       },
       "runtime_feature": "createGlobe, geographic markers, phi updates",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "地球儀と緯度経度マーカーの描画・回転。拠点データは制作例。"
     },
     "d3": {
       "id": "d3",
-      "title": "同じ階層を、別の形へ",
-      "role": "グラフ・データ表現",
-      "description": "同じ階層データを二つの図へ変換。値の関係を保ちながら、配置と形を滑らかにつなぎます。",
+      "title": "同じ階層データを二つの配置へ変換する",
+      "role": "データ可視化ライブラリを実行",
+      "description": "D3のhierarchy、treemap、partition、selection joinで、同じ架空の階層データを二つの配置へ変換し、その間の形をつないでいます。",
       "source_file": "examples/runtime/scenes/d3.js",
       "version": "D3 7.9.0",
       "poster_time": 4,
@@ -377,13 +387,14 @@
         }
       },
       "runtime_feature": "hierarchy, treemap, partition, scaleOrdinal, easeCubicInOut, selection joins",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "架空の階層データによるレイアウトと描画。treemap・partitionの配置を使用。"
     },
     "anime": {
       "id": "anime",
-      "title": "線から秩序へ、形から流れへ",
-      "role": "SVG・幾何学",
-      "description": "線を描く動きと、中心から広がる図形を組み合わせた幾何学作品。",
+      "title": "SVGの線描画と図形の時間差を制御する",
+      "role": "アニメーションライブラリを実行",
+      "description": "Anime.jsのcreateTimeline、svg.createDrawable、中心からのstaggerで、SVGの線と格子状の図形を組み合わせています。",
       "source_file": "examples/runtime/scenes/anime.js",
       "version": "Anime.js 4.5.0",
       "poster_time": 4,
@@ -412,13 +423,14 @@
         }
       },
       "runtime_feature": "createTimeline, svg.createDrawable, center-grid stagger, seek",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "createTimeline・SVG描画・図形変形・時刻指定を使用。"
     },
     "fabric": {
       "id": "fabric",
-      "title": "動かしても、部品のまま編集できる",
-      "role": "編集できる2D",
-      "description": "図形と文字をグループのまま変形させ、選択枠とSVG出力で編集可能な部品として見せます。",
+      "title": "Canvasのグループ変形とSVG出力を試す",
+      "role": "Canvas編集ライブラリを実行",
+      "description": "Fabric.jsで図形と文字をGroupへまとめ、選択枠を表示したまま拡大・回転。toSVGを実行し、ベクター出力の文字数も表示しています。",
       "source_file": "examples/runtime/scenes/fabric.js",
       "version": "Fabric.js 7.4.0",
       "poster_time": 4,
@@ -447,13 +459,14 @@
         }
       },
       "runtime_feature": "Canvas, Group, editable selection controls, object transformations, toSVG",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "オブジェクトのグループ・選択枠・変形・SVG出力を使用。"
     },
     "lottie": {
       "id": "lottie",
-      "title": "一つのJSON、二つの描画面",
-      "role": "オリジナルLottie素材",
-      "description": "この作例のために制作したベクターJSONを、SVGとCanvasで並べて同じフレームへ動かします。",
+      "title": "同じアニメーションJSONをSVGとCanvasで再生する",
+      "role": "アニメーション再生ライブラリを実行",
+      "description": "Lottie Webへ独自のベクターJSONを読み込み、SVGとCanvasの二つのレンダラーをgoToAndStopで同じフレームへ合わせています。",
       "source_file": "examples/runtime/scenes/lottie.js",
       "version": "Lottie Web 5.13.0",
       "poster_time": 4,
@@ -482,13 +495,14 @@
         }
       },
       "runtime_feature": "loadAnimation, original vector JSON, SVG and Canvas renderers, goToAndStop",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "コードで作った独自JSONを、SVGとCanvasで読み込み・同期再生。"
     },
     "pixi": {
       "id": "pixi",
-      "title": "散らばった粒が、FORMに集まる",
-      "role": "2D・粒子",
-      "description": "散らばった粒が「FORM」の文字へ集まり、再びほどける。GPUで描く2Dの粒子表現。",
+      "title": "GPUでスプライトを文字の形へ集める",
+      "role": "2D描画エンジンを実行",
+      "description": "PixiJSのApplication、Sprite、ContainerとGPUフィルタで、散らばった粒をFORMの文字へ集め、再びほどく2Dシーンを描いています。",
       "source_file": "examples/runtime/scenes/pixi.js",
       "version": "PixiJS 8.22.0",
       "poster_time": 4,
@@ -517,13 +531,14 @@
         }
       },
       "runtime_feature": "Application, Sprite textures, Container, GPU ColorMatrixFilter, manual render",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "スプライト描画・Container・GPUフィルタを使用。"
     },
     "motion": {
       "id": "motion",
-      "title": "ひとつの操作で、カードが展開する",
-      "role": "UIアニメーション",
-      "description": "カードが順番に展開し、元の位置へ戻る動き。操作の流れを時間差と位置の変化で表現しています。",
+      "title": "JavaScriptのシーケンスでカードを展開する",
+      "role": "Webアニメーションライブラリを実行",
+      "description": "Motionのanimateシーケンスとstaggerで、カードの幅・透明度・位置と詳細表示を時間差で切り替えています。",
       "source_file": "examples/runtime/scenes/motion.js",
       "version": "Motion 14.1.0",
       "poster_time": 4,
@@ -552,13 +567,14 @@
         }
       },
       "runtime_feature": "animate sequence, motion playback time, stagger, layout dimensions and easing",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "JavaScript APIのanimateシーケンス・stagger・時刻指定再生を使用。"
     },
     "fiber": {
       "id": "fiber",
-      "title": "Reactの部品で、均衡する立体を",
-      "role": "Reactで組む3D",
-      "description": "三重のリングと中心の立体を、Reactの部品として構成。フレームに合わせて均衡を変えていきます。",
+      "title": "Reactのコンポーネントで3Dシーンを組む",
+      "role": "React向け3Dレンダラーを実行",
+      "description": "React Three Fiberでリングと中心の立体をReactのコンポーネントとして組み、useFrameと手動advanceで時刻ごとの状態を描いています。",
       "source_file": "examples/runtime/scenes/fiber.js",
       "version": "Fiber 9.8.1 / React 19.3.0",
       "poster_time": 4,
@@ -587,13 +603,14 @@
         }
       },
       "runtime_feature": "React reconciler, declarative meshes, useFrame, frameloop=never, manual advance",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "ReactからThree.jsのシーンを構成・更新。useFrameと手動advanceを使用。"
     },
     "drei": {
       "id": "drei",
-      "title": "丸い角と、柔らかな接地感",
-      "role": "3Dシーンの仕上げ",
-      "description": "角を丸めた立体と柔らかな接地影。Dreiの部品で、スタジオ撮影のようなシーンを組みます。",
+      "title": "角丸立体と接地影をヘルパーで組む",
+      "role": "3D制作ヘルパーを使用",
+      "description": "DreiのRoundedBox、Center、Edges、ContactShadowsをReact Three Fiberと組み合わせ、角を丸めた立体と柔らかな接地影を描いています。",
       "source_file": "examples/runtime/scenes/drei.js",
       "version": "Drei 10.7.9 / Fiber 9.8.1",
       "poster_time": 4,
@@ -622,13 +639,14 @@
         }
       },
       "runtime_feature": "RoundedBox, Center, Edges, ContactShadows; Fiber manual frames",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "選択したヘルパーの使用例。描画の基盤はReact Three FiberとThree.js。"
     },
     "deck": {
       "id": "deck",
-      "title": "5,000点から、街の脈動を見る",
-      "role": "地図・データ表現",
-      "description": "5,000点の架空データを集計し、街の密度と移動経路を立体で見せるデータ表現。",
+      "title": "位置データを密度と移動のレイヤーで描く",
+      "role": "データ描画ライブラリを実行",
+      "description": "deck.glのHexagonLayerで5,000点を集計し、ArcLayerで経路を重ね、密度の高さと透明度を時刻に合わせて変えています。",
       "source_file": "examples/runtime/scenes/deck.js",
       "version": "deck.gl 9.4.0",
       "poster_time": 4,
@@ -657,13 +675,14 @@
         }
       },
       "runtime_feature": "HexagonLayer aggregation + ArcLayer, synthetic geospatial data, dynamic elevationScale",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "架空の位置データによるGPU描画。HexagonLayerの集計とArcLayerを使用。"
     },
     "confetti": {
       "id": "confetti",
-      "title": "完成の瞬間に、小さな祝福を",
-      "role": "紙吹雪・粒子",
-      "description": "独自のひし形の紙吹雪で完成を祝う演出。粒子の色、形、タイミングを調整しています。",
+      "title": "独自の形とタイミングで紙吹雪を出す",
+      "role": "エフェクトライブラリを実行",
+      "description": "canvas-confettiのshapeFromPathでひし形を作り、色・重力・初速・発射時刻を指定して完了を祝う紙吹雪を描いています。",
       "source_file": "examples/runtime/scenes/confetti.js",
       "version": "canvas-confetti 1.9.4",
       "poster_time": 2.2,
@@ -692,13 +711,14 @@
         }
       },
       "runtime_feature": "Real particle physics, custom path shape, seeded random + virtual 60Hz RAF capture",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "実ライブラリの粒子演出を取得。独自形状、固定した乱数と描画時刻を使用。"
     },
     "rive": {
       "id": "rive",
-      "title": "ボタンの状態を、時間で操る",
-      "role": "Rive素材の再生・制御",
-      "description": "公式素材rocket.rivを使い、ボタンを押す動きの再生タイミングをコードから制御した作例。",
+      "title": "Rive素材の再生時刻をコードで指定する",
+      "role": "再生ランタイムと公式素材を使用",
+      "description": "Riveの公式rocket.rivをWASMランタイムで読み込み、LinearAnimationInstanceの時刻とadvance/applyをコードから制御しています。",
       "source_file": "examples/runtime/scenes/rive.js",
       "version": "Rive Canvas Advanced 2.44.2",
       "poster_time": 4,
@@ -727,13 +747,14 @@
         }
       },
       "runtime_feature": "Advanced Canvas WASM runtime, LinearAnimationInstance Press time/advance/apply; upstream rocket.riv (idle, Roll_over, Press)",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "公式素材の既存アニメーションの再生。ステートマシン入力の制御は未実行。"
     },
     "motion-skill": {
       "id": "motion-skill",
-      "title": "レンズが光を一つに集める",
-      "role": "Canvas制作スキル活用",
-      "description": "レンズへ光が集まる仕組みを、一つの場面で表現。制作スキルと専用レンダラーで映像化しました。",
+      "title": "図形の比喩からCanvasの解説動画を作る",
+      "role": "/motionのテンプレートとレンダラーを使用",
+      "description": "/motionのテンプレート・スタイル・作例を参照して独自のレンズと光の場面を作り、専用render.mjsで12秒の動画を出力しています。",
       "source_file": "examples/motion-skill/scene.js",
       "version": "Pinned /motion renderer + Canvas",
       "poster_time": 5.8,
@@ -760,13 +781,14 @@
           "bytes": 15116,
           "sha256": "a3118de8b88ce90c1060805bd4034470142eb7129b2845f222dbe4842fc897d0"
         }
-      }
+      },
+      "scope": "Canvas制作・フレーム取得・MP4出力まで実行。場面はこのガイドの独自制作。"
     },
     "mediabunny": {
       "id": "mediabunny",
-      "title": "Canvasから、本物の動画ファイルへ",
-      "role": "ブラウザでの動画書き出し",
-      "description": "Canvasの240フレームをブラウザでWebMへ書き出し、完成した動画ファイルを読み戻して再生。",
+      "title": "CanvasのフレームをWebMへ書き出して読み戻す",
+      "role": "ブラウザ内のメディア処理を実行",
+      "description": "MediabunnyのCanvasSourceとWebCodecsで240フレームをVP9/WebMへ書き出し、完成したファイルの尺・トラックを読み戻して再生しています。",
       "source_file": "examples/runtime/scenes/mediabunny.js",
       "version": "Mediabunny 1.61.3",
       "poster_time": 4,
@@ -806,13 +828,14 @@
       "native_output": {
         "path": "assets/previews/mediabunny-native.webm",
         "bytes": 943343
-      }
+      },
+      "scope": "ブラウザ内のエンコードと読み戻しを実行。元のWebMも掲載。"
     },
     "ffmpeg-wasm": {
       "id": "ffmpeg-wasm",
-      "title": "ブラウザで色とサイズを変換",
-      "role": "ブラウザでの動画変換",
-      "description": "左にオリジナルのFFmpeg作品、右にブラウザで色とサイズを変換した動画を並べて再生。",
+      "title": "ブラウザで動画の色と解像度を変換する",
+      "role": "WASM処理結果を比較",
+      "description": "ffmpeg.wasmをブラウザで読み込み、元動画へhueとscaleを適用して再エンコード。実際の変換前後の動画を並べています。",
       "source_file": "examples/runtime/scenes/ffmpeg-wasm.js",
       "version": "ffmpeg 0.12.15 / core 0.12.10",
       "poster_time": 4,
@@ -864,13 +887,14 @@
       "native_output": {
         "path": "assets/previews/ffmpeg-wasm-native.mp4",
         "bytes": 539887
-      }
+      },
+      "scope": "WASMの読込・ファイル操作・動画変換を実行。変換前後の実出力を比較。"
     },
     "playwright": {
       "id": "playwright",
-      "title": "指定した瞬間を、そのまま残す",
-      "role": "フレームの取得",
-      "description": "GSAP作品の四つの時刻を実際に取得し、時間を添えたフィルムストリップとして見せます。",
+      "title": "指定した時刻の画面をスクリーンショットにする",
+      "role": "ブラウザ自動化を実行",
+      "description": "PlaywrightでGSAPのデモを0.8・2・4・6.3秒へ移動し、実際に取得した四枚の画面を時刻付きで並べています。",
       "source_file": "examples/runtime/scenes/playwright.js",
       "version": "Playwright 1.64.0 / Chrome 154",
       "poster_time": 4.2,
@@ -914,13 +938,14 @@
           4,
           6.3
         ]
-      }
+      },
+      "scope": "ブラウザ操作とスクリーンショット取得を実行。撮影対象の描画はGSAP。"
     },
     "iart-motion-skills": {
       "id": "iart-motion-skills",
-      "title": "一行ずつ、考えが立ち上がる",
-      "role": "タイポグラフィのスキル活用",
-      "description": "行ごとに時間差をつけ、文字がマスクから立ち上がる表現。kinetic-typographyパックを使っています。",
+      "title": "索引から選んだスキルで文字を一行ずつ出す",
+      "role": "索引から個別スキルを選択・適用",
+      "description": "iartの索引からkinetic-typography-skillsを選択。行マスク、80msの時間差、480msの出現、読み上げ用ラベル、動きを減らす設定をHTMLへ適用しています。",
       "source_file": "examples/kinetic-typography/index.html",
       "version": "iart kinetic-typography 0.1.0",
       "poster_time": 3,
@@ -949,13 +974,14 @@
         }
       },
       "runtime_feature": "Actual pack applied: line mask, 80ms stagger, 480ms ease-out reveal, aria labels, reduced motion, standalone time freeze",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "実際に適用したのは、索引で選んだ別リポジトリのkinetic-typography。"
     },
     "opus-video-prompts": {
       "id": "opus-video-prompts",
-      "title": "一つの線から、時間を持つ映像へ",
-      "role": "制作方法を使ったCanvas作品",
-      "description": "一つの線に時間を与え、場面の構成と時刻指定で映像を組み立てたCanvas作品。",
+      "title": "プロンプト事例の手法でCanvas動画を構成する",
+      "role": "事例資料の制作手法を参照",
+      "description": "Opus Video Promptsの事例資料を参考に、明示した場面構成とseek(t)で一つの線を動かす独自Canvas動画を制作しています。",
       "source_file": "examples/runtime/scenes/opus-video-prompts.js",
       "version": "Original Canvas method study",
       "poster_time": 4.2,
@@ -984,13 +1010,14 @@
         }
       },
       "runtime_feature": "Original Canvas film inspired by the reference collection: explicit beat map, seek(time), persistent visual, coded render; reference is not an engine",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "事例資料を参考にした独自Canvas作品。資料の役割は制作方法の参照。"
     },
     "emil-skills": {
       "id": "emil-skills",
-      "title": "押し直してもつながるUI",
-      "role": "UI設計スキル活用",
-      "description": "押し直しても動きがつながるUI。短い応答、動きの起点、途中の入力を設計に組み込んでいます。",
+      "title": "途中の入力でも動きがつながるUIを設計する",
+      "role": "UI設計・レビュースキルを適用",
+      "description": "Emilの起点・短い応答・transform/opacity・割り込みの規則をUIへ適用。再入力の時刻を指定し、速度を保って目標を切り替えるspringの動きを見せます。",
       "source_file": "examples/runtime/scenes/emil-skills.js",
       "version": "スキル原文 + ブラウザ実装",
       "poster_time": 3.8,
@@ -1019,13 +1046,14 @@
         }
       },
       "runtime_feature": "Skill applied: trigger origin, transform/opacity, closed-form retargeted spring preserving velocity, <300ms response, reduced motion, labelled quarter-speed review",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "入力の時刻を指定したUIの動画デモ。起点・短い応答・途中の入力を再現。"
     },
     "motion-graphics-skills": {
       "id": "motion-graphics-skills",
-      "title": "小さな製品のローンチ映像",
-      "role": "製品映像スキル活用",
-      "description": "架空のスピーカーSONORAを、場面の切り替えと製品ショットで紹介するローンチ映像。",
+      "title": "製品ショットと変形するUIをつなぐ",
+      "role": "apple-launch-filmの設計規則を適用",
+      "description": "スキル集からapple-launch-filmを選び、黒いisland、幅と高さを別々に動かすspring、連続する製品ショットを架空のスピーカーSONORAの紹介へ適用しています。",
       "source_file": "examples/runtime/scenes/motion-graphics-skills.js",
       "version": "Charlie947 skill + Canvas",
       "poster_time": 4,
@@ -1054,13 +1082,14 @@
         }
       },
       "runtime_feature": "SONORA (EXAMPLE): island widget, gradient wallpapers, detail to reveal to family",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "apple-launch-filmの設計規則を独自Canvas作品へ適用。架空の製品紹介。"
     },
     "claude-motion": {
       "id": "claude-motion",
-      "title": "編集から再生へ、ビートをつなぐ",
-      "role": "スキル活用・音の同期",
-      "description": "編集画面の波形からカバーへ動きをつなぎ、共通の時間表でオリジナル効果音を合わせた映像。",
+      "title": "共通の時間表で映像と効果音を同期する",
+      "role": "映像・音の制作規則を適用",
+      "description": "Whaleyのmotion-designとsound-designを参照し、波形からカバーへの変形と自作効果音を同じJSON時間表へ配置。RemotionとPythonで出力しています。",
       "source_file": "examples/remotion/src/WhaleyFilm.tsx",
       "version": "Remotion 4.0.535 + Python SFX",
       "poster_time": 4,
@@ -1087,13 +1116,14 @@
           "bytes": 24010,
           "sha256": "9890b31bb1703f0e834371dbcc61b79ba3e5d18ee7d708cc98c0d7c064731132"
         }
-      }
+      },
+      "scope": "共通タイムラインと音の設計規則を適用。描画はRemotion、音はこのガイドの自作Python合成。"
     },
     "claude-motion-design": {
       "id": "claude-motion-design",
-      "title": "ボタンから画面へ、形を引き継ぐ",
-      "role": "HTML制作スキル活用",
-      "description": "ボタンの形を次の画面へ引き継ぎ、文字のマスクとビートで場面をつなぐアプリの紹介。",
+      "title": "共有する形を引き継いで画面を切り替える",
+      "role": "HTML動画の制作規則を適用",
+      "description": "Howseenのmotion-designを参照し、seek(t)で画面の状態を計算。ボタンから次の画面への共有要素、文字マスク、120BPMの拍を組み合わせています。",
       "source_file": "examples/runtime/scenes/claude-motion-design.js",
       "version": "Howseen skill + HTML engine",
       "poster_time": 4,
@@ -1122,13 +1152,14 @@
         }
       },
       "runtime_feature": "seek(t) engine, shared-element floods, 120 BPM beatmap",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "seek(t)・共有要素・拍の制作規則を独自HTMLへ適用し、フレームから動画化。"
     },
     "code-video-model": {
       "id": "code-video-model",
-      "title": "配送ローバーの走行（コード編集可能な3Dシーン）",
-      "role": "コード動画の制作",
-      "description": "固定カメラのS字道路を配送ローバーが走行するThree.jsシーン。経路、色、障害物の高さをコードで編集できるCodeVideoModel向け入力作例。",
+      "title": "AI動画への入力となる走行のコード動画を作る",
+      "role": "公式レンダラーで入力動画を制作",
+      "description": "CodeVideoModelの入力側を実行。Three.jsでS字道路と配送ローバーを構築し、seek(t)から経路・車輪・カメラの状態を決め、公式レンダラーでコード動画を出力しています。",
       "source_file": "examples/code-video-model/case/scene.js",
       "version": "CodeVideoModel 404e03d",
       "poster_time": 2.5,
@@ -1161,7 +1192,8 @@
           "bytes": 9714,
           "sha256": "c71bbbd220c2ae79a6265be52e0f1d77b47ba21be1a7247d5f3bedb886b1becd"
         }
-      }
+      },
+      "scope": "入力のコード動画まで実行。参照画像とH3による最終映像の生成は未実行。"
     },
     "anatomy": {
       "id": "anatomy",
@@ -1196,7 +1228,8 @@
         }
       },
       "runtime_feature": "Anatomy iso-kit SVG / 65 solid parts / deterministic linear press",
-      "processing_proof": null
+      "processing_proof": null,
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "mermaid": {
       "id": "mermaid",
@@ -1244,7 +1277,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "chartjs": {
       "id": "chartjs",
@@ -1292,7 +1326,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "echarts": {
       "id": "echarts",
@@ -1340,7 +1375,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "xyflow": {
       "id": "xyflow",
@@ -1388,7 +1424,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "plotly": {
       "id": "plotly",
@@ -1436,7 +1473,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "nivo": {
       "id": "nivo",
@@ -1484,7 +1522,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "g6": {
       "id": "g6",
@@ -1532,7 +1571,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "cytoscape": {
       "id": "cytoscape",
@@ -1580,7 +1620,8 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
     },
     "force-graph-3d": {
       "id": "force-graph-3d",
@@ -1628,7 +1669,91 @@
         "outOfOrderEqual": true,
         "idleEqual": true,
         "freshPageEqual": true
-      }
+      },
+      "scope": "この専用作例の範囲に限る。原典の全機能・全環境は未検証。"
+    },
+    "motion-reel": {
+      "id": "motion-reel",
+      "title": "共通の時計で映像・効果音・確認フレームを作る",
+      "role": "制作スキルと同梱レンダラーを使用",
+      "description": "Motion Reelのひな形とレンダラーで、カードの変形と4つの効果音を同じ秒に指定し、MP4と確認用フレームを出力しています。",
+      "source_file": "examples/motion-reel/scene.js",
+      "version": "Motion Reel 0.1.0 / Playwright 1.64.0 / Chrome 154",
+      "poster_time": 5.8,
+      "authoring_agent": "Codex",
+      "skill_commit": "56198544e69201b1c202e0c00fb90b568a729824",
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": true,
+      "runtime_feature": "Native HTML Canvas seek(t), deterministic frame checks and shared audio events",
+      "files": {
+        "mp4": {
+          "path": "assets/previews/motion-reel.mp4",
+          "bytes": 100178,
+          "sha256": "77f9d9f7f02a9c0ad973693b094e915800cecd403710fbd0bfb68ddc4e968a9f"
+        },
+        "gif": {
+          "path": "assets/previews/motion-reel.gif",
+          "bytes": 190472,
+          "sha256": "370ba25c285ac4e9d097d81c9ba2f8087690b9bfe6bb1efeb6cf1039ee51e65c"
+        },
+        "webp": {
+          "path": "assets/previews/motion-reel.webp",
+          "bytes": 11048,
+          "sha256": "bd05431aa935bef860c9a799c72dc71ebc40801a006789d52996bb69e3e75efe"
+        }
+      },
+      "scope": "ひな形・同梱レンダラーを使った8秒の制作例。横長・縦長の出力記録を同梱。音の聴取レビューは別途必要です。"
+    },
+    "machine-skill": {
+      "id": "machine-skill",
+      "title": "機械の回転数・断面・分解・故障を操作する",
+      "role": "Machine Skillと描画キットを使用",
+      "description": "Machine Skillを参照して単気筒コンプレッサーを制作。寸法・材質と圧縮の計算モデルを組み、回転数・断面・分解・吸気弁の故障を操作できる3Dサイトと紹介動画を用意しています。",
+      "source_file": "examples/machine-skill/machine.js",
+      "version": "Machine Skill 35074a9 / Codex実装",
+      "poster_time": 10.0,
+      "native_output": {
+        "path": "examples/machine-skill/index.html",
+        "label": "3Dサイトを別ページで開く ↗",
+        "bytes": 126782,
+        "sha256": "dc686fdf75afb2f0fc017d1e23255f5c02d55c348a9fe39bc3647332139a575e"
+      },
+      "skill_commit": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
+      "implementation": "Codex",
+      "status": "rendered_and_packaged",
+      "duration": 28.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 840,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/machine-skill.mp4",
+          "bytes": 2876858,
+          "sha256": "85c06548ff5273d847c6d6f0496033b3f25f1c1a6da73c95acbc957c8197adcc"
+        },
+        "gif": {
+          "path": "assets/previews/machine-skill.gif",
+          "bytes": 7285304,
+          "sha256": "f630fe6d5356f86cb923f00861ceebd6f8123694539569f79fc22e758afae1d3"
+        },
+        "webp": {
+          "path": "assets/previews/machine-skill.webp",
+          "bytes": 43186,
+          "sha256": "5a61b3a80b93b85c78972de4e9c3ef7ee444193d5de6c91eb0989751e2f2b07f"
+        }
+      },
+      "interactive_page": {
+        "path": "examples/machine-skill/index.html",
+        "label": "3Dサイトを操作"
+      },
+      "scope": "スキルと描画キットから制作した独自モデル。簡略化した圧縮計算、操作ページと28秒動画。"
     }
   },
   "consultation": {

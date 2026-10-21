@@ -68,5 +68,19 @@
     "path": "SKILL.md",
     "commit": "e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f",
     "source_url": "https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/SKILL.md"
+  },
+  {
+    "preview_id": "motion-reel",
+    "repository": "studio-yebisu/motion-reel",
+    "path": "skills/motion-reel/SKILL.md",
+    "commit": "56198544e69201b1c202e0c00fb90b568a729824",
+    "source_url": "https://github.com/studio-yebisu/motion-reel/blob/56198544e69201b1c202e0c00fb90b568a729824/skills/motion-reel/SKILL.md"
+  },
+  {
+    "preview_id": "machine-skill",
+    "repository": "AirsupHQ/machine-skill",
+    "path": "SKILL.md",
+    "commit": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
+    "source_url": "https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/SKILL.md"
   }
 ]

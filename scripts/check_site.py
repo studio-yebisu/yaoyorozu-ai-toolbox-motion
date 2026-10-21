@@ -30,7 +30,7 @@ class Page(HTMLParser):
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical.append(attrs["href"])
         if "id" in attrs: self.ids.append(attrs["id"])
-        for attr in ("href", "src", "poster", "data-src", "data-open-preview", "data-gif"):
+        for attr in ("href", "src", "poster", "data-src", "data-open-preview", "data-gif", "data-interactive-page"):
             if attrs.get(attr): self.links.append(attrs[attr])
         if tag == "img":
             assert "alt" in attrs, f"Image missing alt: {self.path.name}"
@@ -41,9 +41,9 @@ def main():
     records = data["projects"]
     verification = json.loads((ROOT/"data/verification.json").read_text(encoding="utf-8"))
     assert not verification["errors"]
-    curated = json.loads((ROOT/"data/curation.json").read_text(encoding="utf-8"))["projects"]
-    assert {p["id"] for p in records} == {p["id"] for p in curated}
-    assert len(records) == len(curated)
+    curation = json.loads((ROOT/"data/curation.json").read_text(encoding="utf-8"))
+    assert len(records) == len(curation["projects"])
+    assert {p["id"] for p in records} == {p["id"] for p in curation["projects"]}
     assert len(set(p["repository"] for p in records)) == len(records)
     assert len(set(p["id"] for p in records)) == len(records)
     assert len(data["categories"]) == 6
@@ -56,7 +56,7 @@ def main():
         assert p["license_url"].startswith("https://")
         for field in ("summary","use_case","requirements","caution","opus_relation","license_label"):
             assert p[field], (p["id"],field)
-    pages = {path.resolve():Page(path) for path in (ROOT/"index.html",ROOT/"projects.html",ROOT/"guide.html",ROOT/"examples/seek-demo/index.html")}
+    pages = {path.resolve():Page(path) for path in (ROOT/"index.html",ROOT/"projects.html",ROOT/"guide.html",ROOT/"examples/seek-demo/index.html",ROOT/"examples/machine-skill/index.html")}
     checked = 0
     for path, page in pages.items():
         assert page.lang == "ja" and page.h1 == 1, path
@@ -81,7 +81,7 @@ def main():
             if url.scheme or url.netloc: continue
             target = (path.parent/unquote(url.path)).resolve() if url.path else path
             assert target.exists(),f"Missing Markdown link: {path.name} -> {link}"
-    for path in [ROOT/"assets/site.js",ROOT/"assets/previews.js",ROOT/"examples/seek-demo/scene.js"]:
+    for path in [ROOT/"assets/site.js",ROOT/"assets/previews.js",ROOT/"examples/seek-demo/scene.js",ROOT/"examples/motion-reel/scene.js"]:
         subprocess.run(["node","--check",str(path)],check=True,capture_output=True,text=True)
     from PIL import Image
     for filename in ("og-card.png", "og-card-motion-v4.png"):
@@ -104,7 +104,7 @@ def main():
         assert page.meta["twitter:title"] == page.meta["og:title"]
         assert page.meta["twitter:description"] == page.meta["og:description"]
     print(f"PASS: {len(records)} unique repositories, 6 categories.")
-    print(f"PASS: {checked} local HTML links, HTML anchors, Markdown links, 3 JavaScript syntax checks, OG PNG.")
+    print(f"PASS: {checked} local HTML links, HTML anchors, Markdown links, 4 JavaScript syntax checks, OG PNG.")
     print("PASS: canonical + Open Graph + large-image Twitter cards on all 3 public pages.")
     print("License classes:",dict(Counter(p["license_class"] for p in records)))
 

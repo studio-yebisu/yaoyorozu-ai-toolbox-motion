@@ -50,6 +50,10 @@ npx remotion render src/index.ts WhaleyFilm ../../.qa/renders/claude-motion/sile
 - **/motion**：`python scripts/fetch_render_inputs.py`でpinnedの上流ファイルを`.qa`だけに取得し、`python examples/motion-skill/prepare.py`で独自SCENEを元テンプレートへ適用。`node .qa/motion-skill/render.mjs .qa/motion-skill/scene.html --stills 1,3,5.5,8.8,11.5`、続いて`--out .qa/renders/motion-skill/original.mp4`。出力フォルダーを先に作成してください。第三者のライセンス未確認テンプレート全文は配布していません。
 - **iart kinetic-typography**：`examples/kinetic-typography/index.html`を単独で開けます。`?t=3`で時刻を固定。行のARIA、軽減設定、マスクとstaggerを実装しています。
 
+## Motion Reel
+
+[独立したHTML作例](motion-reel/README.md)と[スキルのレンダラー](https://github.com/studio-yebisu/motion-reel)を使用します。同じ時刻を直接描画し、映像と音のイベントを共通に扱います。
+
 ## 配信用の素材を作る
 
 全レンダリングが完了した状態で、リポジトリのルートから次を実行します。素材のない項目はエラーになり、別の動画で補いません。

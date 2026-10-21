@@ -27,6 +27,9 @@ REPOSITORIES = [
     "mermaid-js/mermaid", "chartjs/Chart.js", "apache/echarts",
     "xyflow/xyflow", "plotly/plotly.js", "plouc/nivo",
     "antvis/G6", "cytoscape/cytoscape.js", "vasturiano/3d-force-graph",
+
+    "AirsupHQ/machine-skill",
+    "studio-yebisu/motion-reel",
 ]
 
 

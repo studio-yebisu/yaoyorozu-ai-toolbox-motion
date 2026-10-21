@@ -1,6 +1,8 @@
-# CodeVideoModelのコード動画
+# CodeVideoModel — 機能紹介と入力動画のデモ
 
-固定カメラのS字道路を配送ローバーが走行するThree.jsシーン。経路、色、障害物の高さをコードで編集できるCodeVideoModel向け入力作例。
+CodeVideoModelは、Three.jsのコードで構図と動きを決め、そのコード動画・参照画像・プロンプトからMiniMax-H3（ref2va）で映像を生成するパイプラインです。[確認した公式README](https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/README.md)。
+
+掲載デモで実行したのは、その入力側のコード動画です。配送ローバーがS字道路を走る独自シーンを公式レンダラーで出力しました。参照画像生成とH3による最終映像の生成は未実行です。
 
 CodeVideoModelの公式レンダラーを用い、MiniMax-H3（ref2va）への入力となるコード動画（960×544・24fps・124フレーム、約5.17秒）を制作。Three.jsでS字道路、配送ローバー、障害物を構築し、window.reconstruction.seek(t)によって時刻から車体位置や車輪の回転を一意に計算する設計としました。カメラ軌道データの出力にも対応し、シーンコード側で走行ラインや配色の調整が可能です。
 

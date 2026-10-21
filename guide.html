@@ -21,7 +21,7 @@
 <meta name="twitter:image:alt" content="モーショングラフィック制作ガイド。動く作例と6カテゴリの制作スタック。"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head>
 <body><a class="skip-link" href="#claude-motion">制作ルートへ進む</a><header class="site-header"><div class="header-inner"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">m<span>↗</span></span><span>Claude モーション制作ガイド<small>Studio Yebisu</small></span></a><nav aria-label="メインメニュー"><a href="./#categories">カテゴリ</a><a href="projects.html">作例とツール</a><a class="nav-github" href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div></header>
 <main class="page-width guide-main"><div class="guide-heading"><a class="back-link" href="./">← ガイドのトップ</a><p class="eyebrow">PUT YOUR STACK TOGETHER</p><h1>制作の始め方</h1><p>作りたい表現から制作環境を選ぶ。<br>チャットで使うClaude Motionと、コードでつくる4つのルート。</p></div>
-<nav class="guide-nav" aria-label="制作ルート"><a href="#claude-motion">Claude Motion</a><a href="#motion-production-skills">制作スキルを選ぶ</a><a href="#html">HTML動画</a><a href="#react">React動画</a><a href="#web">動くWeb・UI</a><a href="#explain">解説動画</a><a href="#data-visualization">グラフと関係図</a><a href="#workflow">制作の流れ</a><a href="#motion-direction">動きを詰める</a></nav>
+<nav class="guide-nav" aria-label="制作ルート"><a href="#claude-motion">Claude Motion</a><a href="#motion-production-skills">制作スキルを選ぶ</a><a href="#html">HTML動画</a><a href="#react">React動画</a><a href="#web">動くWeb・UI</a><a href="#explain">解説動画</a><a href="#data-visualization">グラフと関係図</a><a href="#workflow">制作の流れ</a><a href="#motion-direction">動きを詰める</a><a href="#motion-reel">日本語制作スキル</a></nav>
 
 <section class="guide-section" id="claude-motion">
 <p class="eyebrow">CLAUDE MOTION / OFFICIAL BETA</p>
@@ -50,7 +50,7 @@
 <p class="eyebrow">MOTION SKILLS / 15 SOURCES</p>
 <h2>つくりたい映像から、制作スキルを選ぶ</h2>
 <p>RoundtableSpaceの投稿にある15件から、新しく紹介する7つの制作資料を比較しました。製品紹介、素材の編集、絵柄のある解説映像、実装と演出のレビューへつながります。</p>
-<p class="guide-note">新7件は一次資料を確認したスキル・キットです。既存の42本の独自作例と分けて掲載しています。投稿内の既掲載7件は下の作例へ案内し、UI/UXの実装スキル1件は姉妹リポジトリへ整理しました。</p>
+<p class="guide-note">新7件は一次資料を確認したスキル・キットです。既存の44本の独自作例と分けて掲載しています。投稿内の既掲載7件は下の作例へ案内し、UI/UXの実装スキル1件は姉妹リポジトリへ整理しました。</p>
 <div class="table-wrap"><table><thead><tr><th>つくりたいもの</th><th>制作資料</th><th>組み合わせ・役割</th></tr></thead><tbody>
 <tr><td>製品紹介を、形が途切れず変わる短い映像にする。</td><td><a href="https://github.com/AbubakrChan/product-launch-motion" target="_blank" rel="noopener noreferrer">Product Launch Motion</a></td><td>HTMLからMP4</td></tr>
 <tr><td>手元の録画を編集し、字幕・B-roll・ショーリールをつくる。</td><td><a href="https://github.com/nateherkai/hyperframes-student-kit" target="_blank" rel="noopener noreferrer">HyperFrames Student Kit</a></td><td>素材編集・HTML動画</td></tr>
@@ -94,6 +94,8 @@ npm test</code></pre></div>
 <p class="guide-note">確認日：2026年10月13日。新7件のREADME・スキル本文・ライセンスを固定commitで確認しています。インストール、制作実行、作品の品質・速度の検証はしていません。スキルのMITと、外部サービス・素材・GSAPやRemotion本体の利用条件は別です。</p>
 <p class="source-inline"><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/モーション制作スキル15選.md" target="_blank" rel="noopener noreferrer">投稿15件の使い分けと出典 →</a><a href="data/motion-resources.json">7件の一次資料の記録 →</a><a href="data/source-post-2109958757891346459.json">15件の仕分け記録 →</a><a href="https://x.com/RoundtableSpace/status/2109958757891346459" target="_blank" rel="noopener noreferrer">紹介したX投稿 ↗</a></p>
 </section>
+
+
 
 <section class="guide-section" id="html"><p class="eyebrow">01 / HTML TO VIDEO</p><h2>HTMLで短い動画をつくる</h2><p>商品紹介、文字演出、SNS動画ならHTMLベースのHyperFramesが適しています。付属スキルで構成と実装を進め、プレビューしながら修正できます。</p><div class="stack-line"><span>Opus 5.5</span><i>→</i><span>HyperFrames制作スキル</span><i>→</i><span>HTML + 時刻指定できる動き</span><i>→</i><span>Chrome + FFmpeg</span></div><div class="guide-columns"><div><h3>選ぶ理由</h3><p>HTML、CSS、画像、音声を一つのコンポジションにまとめられます。GSAP、Anime.js、Lottie、Three.js等との連携にも対応しています。</p><h3>必要な環境</h3><p>Node.js 22以上とFFmpegが必要です。ローカルでの書き出しに外部クレジットは不要です。外部APIや音声・画像生成を使う場合は別途認証が必要です。</p></div><div><h3>導入の入口</h3><div class="code-panel"><div class="code-header"><span>プロジェクトを作り、プレビュー</span><button data-copy-target="html-command" type="button">コピー</button></div><pre><code id="html-command">npx hyperframes init motion-video
 cd motion-video
@@ -152,5 +154,25 @@ npm run dev</code></pre></div><p>Studioでプレビュー確認し、調整後�
 <p class="guide-note">参考記事「Opus 5.5 Motion Lab」は、液体タイトル・製品映像・マスコットの実験と修正履歴を公開しています。作者が報告する映像の追加指示は、それぞれ10回・15回・4回。制作時間や回数は、その実験の記録です。</p>
 <p class="source-inline"><a href="https://x.com/flxrnc/status/2105311836190978392" target="_blank" rel="noopener noreferrer">Florenceの実験と修正履歴 ↗</a><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/動きを詰める.md" target="_blank" rel="noopener noreferrer">要約と実装の参照先 ↗</a></p>
 </section>
-<section class="guide-section" id="scope"><h2>作例を入口に、一本つくってみる。</h2><p>目的に近いルートを選び、作例のコードをベースにテキストや素材を差し替えることで、制作を開始できます。</p><p><a href="projects.html">42本の作例</a>にはGIFと編集可能なコードが付属しています。各作例の手法や使用バージョンは<a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/作例の制作記録.md">作例の制作記録</a>で確認できます。</p><div class="guide-footer-cta"><p>作例のコードから制作を始める。</p><a href="projects.html">42本の作例を見る →</a></div></section>
+<section class="guide-section" id="motion-reel">
+<p class="eyebrow">STUDIO YEBISU / REUSABLE SKILL</p>
+<h2>制作からレビューまで、日本語スキルでつなぐ</h2>
+<p>Motion Reelは、ブリーフと実素材をもとに場面を設計し、時刻指定の描画、音の同期、出力レビュー、MP4書き出しへつなぐ独自スキルです。商品紹介、UIの変形、文字や図形の短い映像に使えます。</p>
+<div class="guide-columns"><div><h3>一度つくった制作環境を、次の一本へ</h3><p>HTMLのひな形、フレーム取得、短い効果音、確認資料の出力を同梱。新規のHTML動画へ使うほか、RemotionやHyperFramesの既存構成にも制作の判断基準を適用できます。</p><h3>描画した画面を見て直す</h3><p>全体の静止画一覧、速い動きの連続フレーム、360px幅の表示を見て修正します。同じ時刻の再描画と実書き出しの記録を残し、技術的な検査と作品のレビューを分けます。</p></div><div><h3>スキルを追加する</h3><div class="code-panel"><div class="code-header"><span>Claude Code / Codex等のスキル対応エージェント</span><button data-copy-target="motion-reel-install" type="button">コピー</button></div><pre><code id="motion-reel-install">npx skills add studio-yebisu/motion-reel --skill motion-reel</code></pre></div><p>同梱HTMLの書き出しはNode.js 20以上、Chrome、FFmpegとffprobeを使います。特定モデル、APIキー、有料サービスは必須ではありません。</p></div></div>
+<p class="guide-note">元記事をきっかけにStudio Yebisuが独自制作。横長・縦長の8秒動画を書き出し、代表フレームと再現性を確認しました。音の聴取レビューは別途必要です。</p>
+<p class="source-inline"><a href="projects.html#motion-reel">作例と導入条件 →</a><a href="https://github.com/studio-yebisu/motion-reel" target="_blank" rel="noopener noreferrer">スキルと実行コード ↗</a><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/motion-reel.md" target="_blank" rel="noopener noreferrer">制作と検証の記録 ↗</a><a href="https://x.com/seeconvm/status/2106096193235259564" target="_blank" rel="noopener noreferrer">seecoの元記事 ↗</a></p>
+</section>
+<section class="guide-section" id="machines">
+<p class="eyebrow">MECHANISM / CUTAWAY / FILM</p>
+<h2>機械のしくみを、触れる図解にする</h2>
+<p>AirsupのMachine Skillは、機械の名前や見せたい動作をAIエージェントに伝え、操作できる3Dシミュレーションと紹介動画を制作するスキルです。寸法・材質・計算モデルを調べ、断面・分解・X線・入力変更・故障の再現を組み込みます。<a href="examples/machine-skill/">コンプレッサーの機能デモ</a>で、回転数・断面・分解・吸気弁の故障を試せます。</p>
+<p>機械の名前に加え、動かしたい部品、見たい断面、変えたい入力、起こしたい故障を伝えます。出力値の出典と省略した計算も、画面と制作メモに残します。</p>
+<div class="code-panel"><div class="code-header"><span>機械の図解をつくるブリーフ</span><button data-copy-target="machine-brief" type="button">コピー</button></div><pre><code id="machine-brief">単気筒のエアコンプレッサーを作ってください。
+断面でクランク、ピストン、吸排気弁の動きを見せてください。
+回転数を変えて吐出量を計算し、吸気弁が閉じない故障も操作できるように。
+寸法と式の出典、設計値と省略した計算を記録してください。
+操作できるHTML、編集ソース、28秒の紹介動画を用意してください。</code></pre></div>
+<p class="source-inline"><a href="projects.html#machine-skill">作例と導入条件 →</a><a href="https://github.com/AirsupHQ/machine-skill" target="_blank" rel="noopener noreferrer">Machine Skillの公開実装 ↗</a></p>
+</section>
+<section class="guide-section" id="scope"><h2>作例を入口に、一本つくってみる。</h2><p>目的に近いルートを選び、作例のコードをベースにテキストや素材を差し替えることで、制作を開始できます。</p><p><a href="projects.html">44本の作例</a>にはGIFと編集可能なコードが付属しています。各作例の手法や使用バージョンは<a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/作例の制作記録.md">作例の制作記録</a>で確認できます。</p><div class="guide-footer-cta"><p>作例のコードから制作を始める。</p><a href="projects.html">44本の作例を見る →</a></div></section>
 </main><footer class="site-footer"><div class="page-width footer-inner"><a href="./">Claude モーション制作ガイド</a><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/調査ノート.md">掲載ツールの選び方 ↗</a><a href="https://studio-yebisu.github.io/awesome-codex-ppt-skills-ja/">AIスライド制作ガイド ↗</a></div><p class="footer-note">コードと文章はMITライセンスです。ツールおよび素材のライセンスは各項目をご確認ください。</p></footer><div class="toast" id="toast" role="status" aria-live="polite"></div></body></html>

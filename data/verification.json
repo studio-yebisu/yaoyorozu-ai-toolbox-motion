@@ -798,6 +798,44 @@
       "readme_url": "https://github.com/xyflow/xyflow/blob/3d35b57317576b0916c0bfeaaedd573aaacc2839/README.md",
       "verified_at": "2026-10-13T12:13:10.941325+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "AirsupHQ/machine-skill",
+      "repository": "AirsupHQ/machine-skill",
+      "url": "https://github.com/AirsupHQ/machine-skill",
+      "homepage": "https://airsup.ai/lab/skill",
+      "stars": 76,
+      "archived": false,
+      "pushed_at": "2026-10-13T09:04:56Z",
+      "default_branch": "main",
+      "commit_sha": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/README.md",
+      "verified_at": "2026-10-13T12:02:01.690291+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
+      "requested_repository": "studio-yebisu/motion-reel",
+      "repository": "studio-yebisu/motion-reel",
+      "url": "https://github.com/studio-yebisu/motion-reel",
+      "homepage": "",
+      "stars": 0,
+      "archived": false,
+      "pushed_at": "2026-10-13T11:55:34Z",
+      "default_branch": "main",
+      "commit_sha": "56198544e69201b1c202e0c00fb90b568a729824",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/studio-yebisu/motion-reel/blob/56198544e69201b1c202e0c00fb90b568a729824/README.md",
+      "verified_at": "2026-10-13T12:00:01.188274+00:00",
+      "verification": "Public GitHub API, README and MIT license; native 8-second wide/vertical rendering and determinism separately recorded in source repository"
     }
   ],
   "errors": [],

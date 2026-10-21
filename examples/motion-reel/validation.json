@@ -1,0 +1,183 @@
+{
+  "version": "0.1.0",
+  "verified_on": "2026-10-13",
+  "tests_passed": 4,
+  "outputs": {
+    "wide": {
+      "browserVersion": "154.0.8037.99",
+      "config": {
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "duration": 8,
+        "posterTime": 5.8,
+        "seed": 1313,
+        "audioEvents": [
+          {
+            "time": 1.6,
+            "frequency": 440,
+            "duration": 0.14,
+            "gain": 0.22
+          },
+          {
+            "time": 3.2,
+            "frequency": 554.37,
+            "duration": 0.14,
+            "gain": 0.22
+          },
+          {
+            "time": 4.8,
+            "frequency": 659.25,
+            "duration": 0.14,
+            "gain": 0.22
+          },
+          {
+            "time": 6.4,
+            "frequency": 880,
+            "duration": 0.14,
+            "gain": 0.22
+          }
+        ]
+      },
+      "determinism": {
+        "frame": 144,
+        "seconds": 4.8,
+        "first": "2f7515cda20fdf8595c47d6482cc31bd92449caa2a08ce1f72d225d5b4459974",
+        "afterOtherTimes": "2f7515cda20fdf8595c47d6482cc31bd92449caa2a08ce1f72d225d5b4459974",
+        "freshPage": "2f7515cda20fdf8595c47d6482cc31bd92449caa2a08ce1f72d225d5b4459974",
+        "match": true
+      },
+      "audio": {
+        "kind": "synthesized_cues",
+        "sampleRate": 48000,
+        "samples": 384000,
+        "duration": 8,
+        "eventCount": 4,
+        "targetLufs": -16,
+        "measured": {
+          "input_i": "-17.45",
+          "input_tp": "-1.49",
+          "input_lra": "2.80",
+          "input_thresh": "-28.42",
+          "output_i": "-17.18",
+          "output_tp": "-1.50",
+          "output_lra": "2.80",
+          "output_thresh": "-28.15",
+          "normalization_type": "dynamic",
+          "target_offset": "1.18"
+        },
+        "listeningReview": "not_performed_by_renderer"
+      },
+      "video": {
+        "file": "demo-wide.mp4",
+        "sha256": "77f9d9f7f02a9c0ad973693b094e915800cecd403710fbd0bfb68ddc4e968a9f",
+        "width": 960,
+        "height": 600,
+        "fps": 30,
+        "frameCount": 240,
+        "duration": 8,
+        "hasAudio": true
+      },
+      "errors": [],
+      "blockedExternalRequests": [],
+      "visual_review": "representative_frames_checked"
+    },
+    "vertical": {
+      "browserVersion": "154.0.8037.99",
+      "config": {
+        "width": 540,
+        "height": 960,
+        "fps": 30,
+        "duration": 8,
+        "posterTime": 5.8,
+        "seed": 1313,
+        "audioEvents": [
+          {
+            "time": 1.6,
+            "frequency": 440,
+            "duration": 0.14,
+            "gain": 0.22
+          },
+          {
+            "time": 3.2,
+            "frequency": 554.37,
+            "duration": 0.14,
+            "gain": 0.22
+          },
+          {
+            "time": 4.8,
+            "frequency": 659.25,
+            "duration": 0.14,
+            "gain": 0.22
+          },
+          {
+            "time": 6.4,
+            "frequency": 880,
+            "duration": 0.14,
+            "gain": 0.22
+          }
+        ]
+      },
+      "determinism": {
+        "frame": 144,
+        "seconds": 4.8,
+        "first": "91af36fc2ae8cecb3365c4b40740bd6cdf2e4f5d965ad473d881839855d2243c",
+        "afterOtherTimes": "91af36fc2ae8cecb3365c4b40740bd6cdf2e4f5d965ad473d881839855d2243c",
+        "freshPage": "91af36fc2ae8cecb3365c4b40740bd6cdf2e4f5d965ad473d881839855d2243c",
+        "match": true
+      },
+      "audio": {
+        "kind": "supplied_track",
+        "filename": "cues.wav",
+        "sha256": "e50c72cedde0e465ddc82a0c966e72fcdb73004d24ae813d9c2821a8b166c7a7",
+        "targetLufs": -16,
+        "measured": {
+          "input_i": "-17.45",
+          "input_tp": "-1.49",
+          "input_lra": "2.80",
+          "input_thresh": "-28.42",
+          "output_i": "-17.18",
+          "output_tp": "-1.50",
+          "output_lra": "2.80",
+          "output_thresh": "-28.15",
+          "normalization_type": "dynamic",
+          "target_offset": "1.18"
+        },
+        "listeningReview": "not_performed_by_renderer"
+      },
+      "video": {
+        "file": "demo-vertical.mp4",
+        "sha256": "3f32962e2289755b681e85ca0c326677b80ffcc4fc286da5e87838589fa430eb",
+        "width": 540,
+        "height": 960,
+        "fps": 30,
+        "frameCount": 240,
+        "duration": 8,
+        "hasAudio": true
+      },
+      "errors": [],
+      "blockedExternalRequests": [],
+      "visual_review": "representative_frames_checked"
+    }
+  },
+  "files": {
+    "demo-wide.mp4": {
+      "bytes": 100178,
+      "sha256": "77f9d9f7f02a9c0ad973693b094e915800cecd403710fbd0bfb68ddc4e968a9f"
+    },
+    "demo-vertical.mp4": {
+      "bytes": 88363,
+      "sha256": "3f32962e2289755b681e85ca0c326677b80ffcc4fc286da5e87838589fa430eb"
+    },
+    "demo.gif": {
+      "bytes": 190472,
+      "sha256": "370ba25c285ac4e9d097d81c9ba2f8087690b9bfe6bb1efeb6cf1039ee51e65c"
+    },
+    "poster.webp": {
+      "bytes": 11048,
+      "sha256": "bd05431aa935bef860c9a799c72dc71ebc40801a006789d52996bb69e3e75efe"
+    }
+  },
+  "listening_review": "not_performed",
+  "human_approval": "not_requested_for_demo_publication"
+}

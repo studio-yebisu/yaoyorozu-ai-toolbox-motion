@@ -380,7 +380,7 @@
       "repository": "motiondivision/motion",
       "category": "ui",
       "kind": "Webアニメーション",
-      "summary": "スプリング、ドラッグ、レイアウトアニメーションを直感的に実装できるReact向けライブラリ。",
+      "summary": "JavaScriptとReactで、シーケンス、スプリング、ドラッグ、レイアウトの動きを組み立てるWebアニメーションライブラリ。",
       "use_case": "インタラクティブなUI、画面遷移、マイクロインタラクション。",
       "requirements": "JavaScript。React向け機能はReactプロジェクト。",
       "caution": "Webの操作向けアニメーションを動画にするときは、フレーム番号や時刻から状態を決める設計が必要です。",
@@ -693,11 +693,11 @@
       "name": "Code Video Model",
       "repository": "code-video-model/CodeVideoModel",
       "category": "three",
-      "kind": "コード動画とAI生成",
+      "kind": "コードで制御するAI動画制作パイプライン",
       "summary": "Three.jsのコードで構図や動きを組み、その動画と参照画像をもとにMiniMax-H3（ref2va）で映像を生成する仕組み。",
       "use_case": "カメラ、物体の配置、動きの順番をコードで調整し、その条件をAI動画の仕上げへつなぐ。",
       "requirements": "コード動画側はPython、Playwright、ブラウザ、FFmpeg。H3動画生成の公式手順ではUbuntu 22.04とCUDA 12.6対応GPU環境。公式ではコード生成にGPT-6、参照画像生成にGPT-Image-2も使用。",
-      "caution": "公開コードはApache-2.0です。利用するモデル、API、生成素材の条件は個別に確認します。編集するのは元のシーンコードです。",
+      "caution": "掲載デモで実行したのは入力側のコード動画です。参照画像とH3による最終生成は未実行。公開コードはApache-2.0で、利用するモデル、API、生成素材の条件は個別に確認します。",
       "license_label": "Apache-2.0（コード）",
       "license_class": "oss",
       "opus_relation": "シーンの構図と動きの設計、Three.jsコードの編集にClaudeを使い、コード動画をH3の入力へつなぐ。",
@@ -897,6 +897,51 @@
         "3Dネットワーク"
       ],
       "source_post_url": "https://x.com/damkina7/status/2109637722117714002"
+    },
+    {
+      "id": "motion-reel",
+      "name": "Motion Reel / Studio Yebisu",
+      "repository": "studio-yebisu/motion-reel",
+      "category": "skills",
+      "kind": "制作・書き出し・レビュースキル",
+      "summary": "ブリーフからコード動画を制作し、時刻指定の描画、音の同期、フレームレビュー、MP4書き出しへつなぐ日本語スキル。",
+      "use_case": "商品紹介、UIの変形、文字や図形の短い映像を、編集できるソースと確認資料付きで制作する。",
+      "requirements": "SKILL.mdを読むエージェント。同梱HTMLを書き出す場合はNode.js 20以上、Chrome、FFmpegとffprobe。",
+      "caution": "Studio Yebisuの独自実装。横長・縦長の実書き出しと同一環境でのPNG一致を確認。音の聴取レビューは別途必要。Remotion等の既存構成にも判断基準を適用でき、同梱レンダラーは独立HTML用。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "ブリーフ、実素材、場面の状態を渡して映像コードを制作し、描画したフレームを見て修正する。Codex等でも利用できる。",
+      "install": "npx skills add studio-yebisu/motion-reel --skill motion-reel",
+      "tags": [
+        "日本語スキル",
+        "seek(t)",
+        "音の同期",
+        "フレームレビュー",
+        "MP4",
+        "Studio Yebisu"
+      ]
+    },
+    {
+      "id": "machine-skill",
+      "name": "Machine Skill",
+      "repository": "AirsupHQ/machine-skill",
+      "category": "skills",
+      "kind": "機械の3Dシミュレーション制作スキル",
+      "summary": "機械の名前や動作の指示から、寸法・材質・計算モデルを備えた3Dシミュレーションと紹介動画を制作するAirsupのスキル。",
+      "use_case": "エンジンやポンプなどの機構説明、製品紹介、技術教材。断面・分解・X線・入力変更・故障の再現を、操作できるモデルと動画で見せる。",
+      "requirements": "Agent Skillsを読めるエージェント。閲覧はWebGL 2対応ブラウザ、録画はNode.js、Playwright、FFmpeg。Three.jsは固定版のCDNから読み込む。",
+      "caution": "数値は小さな計算モデルによる説明値です。CFD・FEAや製造用CADの代わりにはなりません。作例は簡略化と出典を明記します。",
+      "license_label": "MIT",
+      "license_class": "oss",
+      "opus_relation": "機械の調査、寸法・材料・方程式の整理、Three.jsの組立、断面・分解・故障の演出とフレームレビューに使う。CodexでもSKILL.mdを参照して制作できる。",
+      "install": "npx skills add AirsupHQ/machine-skill",
+      "tags": [
+        "Three.js",
+        "物理モデル",
+        "断面",
+        "分解",
+        "Agent Skills"
+      ]
     }
   ],
   "updated_on": "2026-10-13"

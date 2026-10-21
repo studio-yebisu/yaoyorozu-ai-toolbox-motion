@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Motion Reel — original demo</title>
+  <style>
+    * { box-sizing:border-box; }
+    html,body { margin:0; width:100%; height:100%; overflow:hidden; background:#172322; }
+    canvas { display:block; width:100%; height:100%; }
+    .controls { position:fixed; bottom:12px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:12px; padding:10px 16px; border-radius:12px; background:#f2f0e9; color:#172322; font:14px system-ui; }
+    button { padding:6px 12px; cursor:pointer; }
+    input { width:180px; }
+    @media(max-width:420px) { input { width:110px; } }
+  </style>
+</head>
+<body>
+  <canvas id="scene" aria-label="同じカードが、制作ブリーフから映像と確認資料へ変形するオリジナルデモ"></canvas>
+  <div class="controls" id="controls"><button id="play" aria-pressed="false">再生</button><input id="scrub" aria-label="時刻" type="range" min="0" max="8" step="0.01"><output id="time">0.00s</output></div>
+  <script src="scene.js"></script>
+  <script>
+    (() => {
+      const controls = document.getElementById('controls');
+      if (window.__MOTION_RENDER__ || new URLSearchParams(location.search).has('render')) { controls.remove(); return; }
+      const play = document.getElementById('play'), scrub = document.getElementById('scrub'), output = document.getElementById('time');
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+      let playing = false, seconds = 0, start = 0, raf;
+      function draw(t) { seconds = t; window.seek(t); scrub.value = String(t); output.value = t.toFixed(2) + 's'; }
+      function stop() { playing = false; cancelAnimationFrame(raf); play.textContent = '再生'; play.setAttribute('aria-pressed', 'false'); }
+      function tick(now) { if (!playing) return; draw(((now - start) / 1000) % window.motionConfig.duration); raf = requestAnimationFrame(tick); }
+      play.addEventListener('click', () => { if (playing) return stop(); playing = true; start = performance.now() - seconds * 1000; play.textContent = '停止'; play.setAttribute('aria-pressed', 'true'); raf = requestAnimationFrame(tick); });
+      scrub.addEventListener('input', () => { stop(); draw(Number(scrub.value)); });
+      document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+      reduce.addEventListener('change', () => { if (reduce.matches) stop(); });
+      window.addEventListener('resize', () => draw(seconds));
+      draw(0);
+    })();
+  </script>
+</body>
+</html>

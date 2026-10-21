@@ -1,20 +1,22 @@
 # Claude モーショングラフィック制作ガイド
 
-Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。42のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
+Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。44件のスキル・ツール・参考資料について、元の役割、機能デモ、GIF、編集可能な実装コードを掲載しています。
 
-**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[42本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
+**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[44本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
 
 ![Claude モーショングラフィック制作ガイド](assets/og-card-motion-v4.png)
 
 ## ガイドの内容
 
 - **投稿15件の使い分け**：[モーション制作スキル7件を新たに紹介](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-production-skills)。用途・導入・利用条件を比較し、既掲載7件とUI/UX側の1件へ案内します。新7件は資料の確認段階で、作例の本数とは分けています。
-- **42本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
+- **44本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
 - **GIFと実装コード**：動きと実装をその場で確認し、コードをコピーして再現・編集できます。
 - **6カテゴリと4つの制作ルート**：用途や実行環境に応じた組み合わせを選択できます。
 - **Claude Motion（公式ベータ）**：[チャットから制作する方法](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#claude-motion)。Team・Enterpriseの利用条件と、Charlie Hillsの制作手順・16種の作例記事を紹介しています。
 - **動きを詰める方法**：[指示の具体化とフレーム単位の修正](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-direction)。実験記事の要約と、コピーして使える修正ブリーフを掲載しています。
 - **グラフと関係図**：[数値・工程・ネットワークを動かす](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#data-visualization)。Chart.js、ECharts、Mermaid、React Flowなど9件を追加し、用途と独自作例を比較できます。
+
+- **日本語の制作スキル**：[Motion Reel](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-reel)。ブリーフ、時刻指定描画、音の同期、フレームレビュー、MP4書き出しをつなぐ独自スキルです。
 - **40秒の紹介動画**：作例31本を用いた紹介映像。[制作コード・構成表](examples/remotion/PROMO_README.md)（Suno楽曲含む）も確認できます。
 
 ## 4つの制作ルート
@@ -31,7 +33,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 ## スキル・ツール一覧
 
 
-### 制作スキル・事例（9件）
+### 制作スキル・事例（11件）
 
 | スキル・ツール | 使いどころ | ライセンス |
 | --- | --- | --- |
@@ -44,6 +46,8 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 | [Anatomy](https://github.com/wheresryan22/anatomy) | 機械・装置・技術の仕組みを、操作できる立体図で伝える。 | [MIT](https://github.com/wheresryan22/anatomy/blob/e6600ffc4e8e6620eeb45bf49bcdbd5e4b84163f/LICENSE) |
 | [iart.ai Motion Skills](https://github.com/iart-ai/motion-skills) | 目的の表現に応じた専用プロンプトやスキルの選択。 | [MIT（索引）](https://github.com/iart-ai/motion-skills/blob/4a9822375b589294aa369fde44205c62dfcf9c27/LICENSE) |
 | [Opus 5.5 Video Prompts](https://github.com/apimodels/claude-opus-5-5-video-prompts) | プロンプトの記述粒度や技術選定パターンの調査。 | [CC BY 4.0（編集資料）](https://github.com/apimodels/claude-opus-5-5-video-prompts/blob/383335d1ed1a6a6d84b772d7c802ca0d221f6410/LICENSE) |
+| [Motion Reel / Studio Yebisu](https://github.com/studio-yebisu/motion-reel) | 商品紹介、UIの変形、文字や図形の短い映像を、編集できるソースと確認資料付きで制作する。 | [MIT](https://github.com/studio-yebisu/motion-reel/blob/56198544e69201b1c202e0c00fb90b568a729824/LICENSE) |
+| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | エンジンやポンプなどの機構説明、製品紹介、技術教材。断面・分解・X線・入力変更・故障の再現を、操作できるモデルと動画で見せる。 | [MIT](https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/LICENSE) |
 
 ### 動画制作・書き出し（7件）
 
@@ -110,6 +114,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 - [ツールの選定基準](docs/調査ノート.md)
 - [ライセンスと出典一覧](docs/出典とライセンス.md)
 - [作例の制作記録](docs/作例の制作記録.md)
+- [全件のツール・スキルとデモの対応、実行範囲](docs/ツールと作例の対応.md)
 - [制作コードと再現手順](examples/README.md)
 - [使用制作スタック](docs/制作スタック.md)
 - [動きを詰める：実験記事の要約と実装の参照先](docs/動きを詰める.md)
@@ -130,7 +135,7 @@ python -u -m http.server 0 --bind 127.0.0.1
 
 実行後にターミナルに表示されたURLをブラウザで開きます。公開はGitHub Pagesの`main`ブランチ（ルートディレクトリ）です。
 
-編集対象ファイルは[data/curation.json](data/curation.json)、[templates](templates/)、[assets](assets/)です。`index.html`、`projects.html`、`guide.html`、`data/projects.json`、本READMEはスクリプトによるビルド生成物です。詳細は[コントリビューションガイド](CONTRIBUTING.md)を参照してください。
+編集対象ファイルは[data/curation.json](data/curation.json)、[templates](templates/)、[assets](assets/)です。`index.html`、`projects.html`、`guide.html`、`data/projects.json`、本README、[ツールと作例の対応](docs/ツールと作例の対応.md)はスクリプトによるビルド生成物です。詳細は[コントリビューションガイド](CONTRIBUTING.md)を参照してください。
 
 一次資料の更新には[scripts/collect_sources.py](scripts/collect_sources.py)を使用します（`--evidence-dir`には公開リポジトリ外のパスを指定）。
 

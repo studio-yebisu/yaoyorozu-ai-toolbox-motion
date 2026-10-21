@@ -1,0 +1,7 @@
+{
+  "name": "studio-yebisu-machine-study",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "record": "node scripts/record.mjs index.html" },
+  "devDependencies": { "playwright": "1.64.0" }
+}
