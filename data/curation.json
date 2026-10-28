@@ -1,6 +1,6 @@
 {
   "creator": {
-    "name": "八百万図AIツールボックス",
+    "name": "Yaoyorozu AI ToolBox",
     "url": "https://github.com/studio-yebisu"
   },
   "categories": [
@@ -907,7 +907,7 @@
       "summary": "ブリーフからコード動画を制作し、時刻指定の描画、音の同期、フレームレビュー、MP4書き出しへつなぐ日本語スキル。",
       "use_case": "商品紹介、UIの変形、文字や図形の短い映像を、編集できるソースと確認資料付きで制作する。",
       "requirements": "SKILL.mdを読むエージェント。同梱HTMLを書き出す場合はNode.js 20以上、Chrome、FFmpegとffprobe。",
-      "caution": "八百万図AIツールボックスの独自実装。横長・縦長の実書き出しと同一環境でのPNG一致を確認。音の聴取レビューは別途必要。Remotion等の既存構成にも判断基準を適用でき、同梱レンダラーは独立HTML用。",
+      "caution": "Yaoyorozu AI ToolBoxの独自実装。横長・縦長の実書き出しと同一環境でのPNG一致を確認。音の聴取レビューは別途必要。Remotion等の既存構成にも判断基準を適用でき、同梱レンダラーは独立HTML用。",
       "license_label": "MIT",
       "license_class": "oss",
       "opus_relation": "ブリーフ、実素材、場面の状態を渡して映像コードを制作し、描画したフレームを見て修正する。Codex等でも利用できる。",
@@ -918,7 +918,7 @@
         "音の同期",
         "フレームレビュー",
         "MP4",
-        "八百万図AIツールボックス"
+        "Yaoyorozu AI ToolBox"
       ]
     },
     {

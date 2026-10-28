@@ -26,7 +26,7 @@ def rect(box,fill,outline=None,r=0):
 
 rect((48,40,95,87),"#20252b",r=10)
 text(58,40,"m",29,"#f5f2ec",True)
-text(111,45,"八百万図AIツールボックス / 日本語ガイド",16)
+text(111,45,"Yaoyorozu AI ToolBox / 日本語ガイド",16)
 text(51,128,"CLAUDE OPUS 5.5  /  MOTION DESIGN",16,"#697078")
 text(48,165,"Claudeでつくる、",43,bold=True)
 text(48,225,"モーショングラフィック。",43,bold=True)
